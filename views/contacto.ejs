@@ -1,0 +1,77 @@
+<!-- views/contacto.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body class="flex flex-col min-h-screen">
+<%- include('partials/navbar') %>
+
+<main class="flex-grow">
+    <!-- Sección 1: Intro -->
+    <section class="section-container text-center pb-8">
+        <h1 class="text-4xl font-bold mb-4 text-teal-600"><%= tituloPrincipal %></h1>
+        <p class="text-slate-600 text-lg"><%= descripcion %></p>
+    </section>
+
+    <!-- Sección 2: Info + Formulario -->
+    <section class="section-container grid md:grid-cols-2 gap-12 items-start">
+
+        <!-- Columna Datos con nuevos Iconos -->
+        <div class="space-y-6">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-8">
+                <h4 class="text-xs uppercase tracking-widest text-teal-600 font-bold mb-4">Información de contacto</h4>
+
+                <!-- Ubicación -->
+                <div class="flex items-start space-x-4">
+                    <img src="/images/location.svg" alt="Icono Ubicación" class="w-6 h-6 mt-1">
+                    <div>
+                        <p class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Visítanos</p>
+                        <p class="text-slate-700 font-semibold text-lg leading-tight"><%= infoContacto.direccion %></p>
+                    </div>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="flex items-start space-x-4">
+                    <img src="/images/phone.svg" alt="Icono Teléfono" class="w-6 h-6 mt-1">
+                    <div>
+                        <p class="text-xs text-slate-400 uppercase font-bold tracking-tighter">Llámanos</p>
+                        <p class="text-slate-700 font-semibold text-lg leading-tight"><%= infoContacto.telefono %></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horarios (Mantenido igual) -->
+            <div class="bg-teal-50 p-8 rounded-2xl border border-teal-100">
+                <h3 class="text-xl font-bold mb-2 text-teal-800 italic">Atención Médica</h3>
+                <p class="text-slate-600 text-sm">Disponibilidad inmediata para urgencias 24/7.</p>
+            </div>
+        </div>
+
+        <!-- Columna Formulario (Sin cambios en lógica) -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-50">
+            <h3 class="text-2xl font-bold mb-6 text-slate-800 tracking-tight">Envíanos tu consulta</h3>
+            <form action="/enviar-consulta" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">Nombre</label>
+                    <input type="text" name="nombre" required class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">Mensaje</label>
+                    <textarea name="consulta" rows="4" required class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-teal-600 text-white font-bold py-3 rounded-lg hover:bg-teal-700 transition shadow-lg shadow-teal-100">
+                    Enviar Consulta
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

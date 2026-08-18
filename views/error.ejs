@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('partials/head', { titulo: 'Error' }) %>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-50">
+<!-- Fallback de nombre si la variable no llega en el error -->
+<%- include('partials/navbar', { nombreClinica: locals.nombreClinica || 'VetCare Pro' }) %>
+
+<main class="flex-grow flex items-center justify-center px-6">
+    <section class="max-w-2xl w-full text-center">
+        <span class="text-9xl font-extrabold text-teal-100 uppercase tracking-tighter"><%= error.status %></span>
+        <h1 class="text-3xl font-bold text-slate-800 -mt-12 relative mb-8"><%= message %></h1>
+
+        <a href="/" class="inline-block bg-teal-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-teal-700 transition">
+            Volver a salvo
+        </a>
+
+        <% if (error.stack) { %>
+            <div class="mt-12 text-left bg-slate-900 text-teal-400 p-6 rounded-xl text-xs font-mono">
+                <pre><%= error.stack %></pre>
+            </div>
+        <% } %>
+    </section>
+</main>
+
+<%- include('partials/footer', { nombreClinica: locals.nombreClinica || 'VetCare Pro' }) %>
+</body>
+</html>

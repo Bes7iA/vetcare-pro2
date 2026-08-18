@@ -1,0 +1,8 @@
+[2026-08-10 12:14:57] ❌ JSON - Error al crear el archivo JSON: ENOENT: no such file or directory, open 'D:\Trabajo\Proyectos JAVASCRIPT\app-vet-monolito\public\data\2026-08-10 12:14:57.json'
+[2026-08-10 12:16:57] ✅ JSON - Creación del archivo 2026-08-10-12_16_57.json realizada con éxito.
+[2026-08-10 12:16:57] ✅ JSON - Archivo 2026-08-10-12_16_57.json leído con éxito.
+[2026-08-18 11:58:30] GET / - El usuario visitó la página de Inicio.
+[2026-08-18 11:58:33] GET / - El usuario visitó la página de Inicio.
+[2026-08-18 11:58:34] GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-18 11:58:36] GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-18 11:58:39] GET / - El usuario visitó la página de Inicio.

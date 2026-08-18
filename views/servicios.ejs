@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body class="flex flex-col min-h-screen">
+<%- include('partials/navbar') %>
+
+<main class="flex-grow">
+    <section class="section-container text-center pb-0">
+        <h1 class="text-4xl font-bold mb-4 text-teal-600"><%= tituloPrincipal %></h1>
+        <p class="text-slate-600 text-lg"><%= descripcion %></p>
+    </section>
+
+    <section class="section-container grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <% listaServicios.forEach(servicio => { %>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-teal-200 transition">
+                <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-teal-600 font-bold">✓</div>
+                <h3 class="font-bold text-xl mb-2 text-slate-800"><%= servicio %></h3>
+                <p class="text-slate-500 text-sm italic">Especialidad VetCare Pro.</p>
+            </div>
+        <% }) %>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="flex flex-col min-h-screen">
+<%- include('partials/navbar') %>
+
+<main class="flex-grow">
+  <section class="bg-teal-600 text-white py-20 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-5xl font-bold mb-6"><%= tituloPrincipal %></h1>
+      <p class="text-xl text-teal-50-80 opacity-90"><%= descripcion %></p>
+    </div>
+  </section>
+
+  <section class="section-container text-center">
+    <h2 class="text-3xl font-bold mb-4">Bienvenido a nuestra comunidad</h2>
+    <p class="text-slate-600 text-lg max-w-2xl mx-auto">
+      En <%= nombreClinica %>, entendemos que tu mascota es parte de tu familia.
+    </p>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>
