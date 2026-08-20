@@ -1,9 +1,11 @@
 <!-- views/partials/footer.ejs -->
-<footer class="p-8 border-t border-slate-200 text-center text-slate-500 text-sm">
-    <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center opacity-70">
-        <p>&copy; <%= new Date().getFullYear() %> <%= nombreClinica %></p>
-        <p class="mt-2 md:mt-0 font-medium">
+<footer class="fixed bottom-0 left-0 w-full bg-slate-50 p-3 border-t border-slate-200 text-center text-slate-500 text-sm z-50">
+    <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-1 opacity-70">
+        <!-- Estado del sistema arriba -->
+        <p class="font-medium">
             Estado del sistema: <span class="text-teal-600 uppercase text-xs font-bold tracking-widest">Activo</span>
         </p>
+        <!-- Copyright justo debajo -->
+        <p>&copy; <%= new Date().getFullYear() %> <%= nombreClinica %></p>
     </div>
 </footer>

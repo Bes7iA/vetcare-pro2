@@ -1,8 +1,221 @@
 [2026-08-10 12:14:57] ❌ JSON - Error al crear el archivo JSON: ENOENT: no such file or directory, open 'D:\Trabajo\Proyectos JAVASCRIPT\app-vet-monolito\public\data\2026-08-10 12:14:57.json'
 [2026-08-10 12:16:57] ✅ JSON - Creación del archivo 2026-08-10-12_16_57.json realizada con éxito.
 [2026-08-10 12:16:57] ✅ JSON - Archivo 2026-08-10-12_16_57.json leído con éxito.
-[2026-08-18 11:58:30] GET / - El usuario visitó la página de Inicio.
-[2026-08-18 11:58:33] GET / - El usuario visitó la página de Inicio.
-[2026-08-18 11:58:34] GET /servicios - El usuario visitó la página de Servicios.
-[2026-08-18 11:58:36] GET /contacto - El usuario visitó la página de Contacto.
-[2026-08-18 11:58:39] GET / - El usuario visitó la página de Inicio.
+
+----------------------------------------
+[2026-08-19 11:54:08] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 11:57:18] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 11:57:19] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 11:57:26] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 11:58:56] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 11:59:43] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:00:19] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:02:46] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:09:46] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:09:53] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:09:54] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 12:09:55] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-19 12:10:12] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:10:12] 💾 BASE DE DATOS: Intentando conectar a PostgreSQL en localhost:5432.
+[2026-08-19 12:10:12] 💾 BASE DE DATOS: Conexión a PostgreSQL establecida con éxito.
+[2026-08-19 12:10:12] 🌐 POST /enviar-consulta - PROCESANDO: Iniciando envío de correo para asdasd@asdasd.com...
+[2026-08-19 12:10:16] 🌐 POST /enviar-consulta - ÉXITO: Correo enviado correctamente desde asdasd@asdasd.com.
+[2026-08-19 12:10:16] 💾 BASE DE DATOS: Ejecutando un INSERT en la base de datos PostgreSQL.
+[2026-08-19 12:10:16] 💾 BASE DE DATOS: Registro insertado exitosamente en PostgreSQL.
+[2026-08-19 12:10:16] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-19 12:10:16] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-19 12:10:19] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:12:01] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:12:10] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:12:11] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:12:34] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 12:12:34] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 12:12:39] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:13:53] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:14:39] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:14:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:14:41] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:15:04] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:16:33] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:17:41] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 12:17:41] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 12:17:44] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:20:33] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:20:34] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:20:35] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:21:53] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 12:21:53] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 12:21:55] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:22:20] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:23:52] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:25:01] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:31:11] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-19 12:31:12] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:32:18] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:32:19] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:32:21] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 12:32:37] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:32:38] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 12:32:39] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:32:40] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-19 12:32:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:40:39] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:40:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:40:44] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:40:44] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 12:53:31] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:54:56] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 12:54:56] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 12:54:58] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 12:55:19] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:57:14] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:57:14] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:58:18] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:58:54] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 12:58:54] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 12:58:59] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 12:58:59] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:03:19] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 13:03:19] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 13:03:31] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:03:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:03:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:05:22] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 13:05:23] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 13:05:24] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:05:25] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-19 13:05:27] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 13:05:29] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:34:39] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 13:34:39] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 13:35:38] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 13:35:40] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 13:35:42] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-19 13:36:11] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:36:32] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:38:11] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:38:17] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:38:18] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:39:54] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 13:40:01] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+-----------------------------------------------------------------------------------------
+
+[2026-08-20 09:41:41] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-20 09:41:41] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-20 09:41:44] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:41:54] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:41:59] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+-----------------------------------------------------------------------------------------
+
+[2026-08-20 09:45:54] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-20 09:45:54] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-20 09:46:00] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:46:10] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:46:17] 🌐 GET /registro - El usuario visitó la página de Registro.
+[2026-08-20 09:46:22] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:46:28] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 09:46:28] 🔐 LOGIN: Intento de inicio de sesión para el usuario "admin"...
+[2026-08-20 09:46:28] 🔐✅ LOGIN ÉXITO: Sesión iniciada para "admin" (ID: 1).
+[2026-08-20 09:46:29] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 09:49:05] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 09:49:08] 🚪 LOGOUT: Sesión finalizada para el usuario "admin".
+[2026-08-20 09:49:08] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:49:10] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:51:37] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:51:41] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:51:45] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:52:11] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:52:12] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:52:13] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:52:14] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:52:19] 🌐 GET /registro - El usuario visitó la página de Registro.
+[2026-08-20 09:52:27] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:52:28] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:52:29] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:52:33] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:52:34] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:52:36] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:56:07] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:56:09] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:56:10] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:56:13] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:56:13] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:57:17] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:57:19] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:57:20] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:57:22] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 09:57:24] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:57:26] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:57:27] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:58:21] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:58:23] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:58:25] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:58:26] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:58:54] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:59:11] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:59:45] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:59:47] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 09:59:48] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 09:59:50] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 09:59:51] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:00:08] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:00:10] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:00:11] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 10:00:13] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:00:14] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:00:16] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 10:00:18] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:00:50] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:00:52] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:00:52] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 10:00:53] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:00:54] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 10:00:55] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:02:55] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:02:56] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 10:02:57] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:02:58] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:04:14] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:04:16] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:04:22] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 10:04:24] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:04:24] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:04:25] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 10:04:27] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:04:34] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:04:34] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 10:04:35] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:04:42] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 10:04:50] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:04:50] 🔐 LOGIN: Intento de inicio de sesión para el usuario "admin"...
+[2026-08-20 10:04:50] 🔐✅ LOGIN ÉXITO: Sesión iniciada para "admin" (ID: 1).
+[2026-08-20 10:04:50] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:04:54] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:04:57] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 10:04:58] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:10:06] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:10:15] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:10:22] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-20 10:10:22] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-20 10:10:24] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:10:27] 🚪 LOGOUT: Sesión finalizada para el usuario "admin".
+[2026-08-20 10:10:27] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 10:10:29] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-20 10:10:30] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-20 10:10:31] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-20 10:10:32] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-20 10:10:37] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:10:37] 🔐 LOGIN: Intento de inicio de sesión para el usuario "admin"...
+[2026-08-20 10:10:37] 🔐✅ LOGIN ÉXITO: Sesión iniciada para "admin" (ID: 1).
+[2026-08-20 10:10:37] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:13:45] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:13:45] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:12] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:12] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:18] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:23] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:23] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:25] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:30] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:14:30] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-20 10:30:17] 🌐 GET / - El usuario visitó la página de Inicio.

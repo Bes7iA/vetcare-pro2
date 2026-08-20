@@ -9,9 +9,35 @@
     </div>
 
     <!-- Enlaces de Navegación -->
-    <div class="space-x-6 font-semibold text-slate-600">
-        <a href="/" class="hover:text-teal-600">Inicio</a>
-        <a href="/servicios" class="hover:text-teal-600">Servicios</a>
-        <a href="/contacto" class="hover:text-teal-600">Contacto</a>
+    <div class="flex items-center space-x-6 font-semibold text-sm">
+        <a href="/" class="<%= rutaActual === '/' ? 'text-teal-600 font-bold' : 'text-slate-600 hover:text-teal-600' %>">
+            Inicio
+        </a>
+        <a href="/servicios" class="<%= rutaActual === '/servicios' ? 'text-teal-600 font-bold' : 'text-slate-600 hover:text-teal-600' %>">
+            Servicios
+        </a>
+        <a href="/contacto" class="<%= rutaActual === '/contacto' ? 'text-teal-600 font-bold' : 'text-slate-600 hover:text-teal-600' %>">
+            Contacto
+        </a>
+
+        <% if (usuario) { %>
+            <!-- Vista protegida: Marcado dinámico para Registro de Mascotas -->
+            <a href="/mascotas" class="<%= rutaActual === '/mascotas' ? 'text-teal-600 font-bold' : 'text-slate-600 hover:text-teal-600' %>">
+                Registro de mascotas
+            </a>
+
+            <span class="text-teal-700 font-bold bg-teal-50 px-3 py-1 rounded-full">
+                Hola, <%= usuario.nombre %>
+            </span>
+            <form action="/logout" method="POST" class="inline">
+                <button type="submit" class="text-red-500 hover:text-red-700 font-semibold">
+                    Cerrar sesión
+                </button>
+            </form>
+        <% } else { %>
+            <a href="/login" class="px-4 py-2 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition">
+                Iniciar sesión
+            </a>
+        <% } %>
     </div>
 </nav>
