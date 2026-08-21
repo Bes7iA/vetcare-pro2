@@ -111,7 +111,7 @@ router.post('/login', esInvitado, async (req, res) => {
         };
 
         registrarActividad(`🔐✅ LOGIN ÉXITO: Sesión iniciada para "${usuario.nombre}" (ID: ${usuario.id}).`);
-        res.redirect('/mascotas');
+        res.redirect('/');
     } catch (error) {
         registrarActividad(`❌🔐 LOGIN ERROR CRÍTICO: ${error.message}`);
         console.error('Error en login:', error);

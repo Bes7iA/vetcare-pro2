@@ -219,3 +219,43 @@
 [2026-08-20 10:14:30] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
 [2026-08-20 10:14:30] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
 [2026-08-20 10:30:17] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 10:34:14] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 10:34:14] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 10:34:16] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 10:34:18] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-21 10:34:23] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:34:23] 🔐 LOGIN: Intento de inicio de sesión para el usuario "admin"...
+[2026-08-21 10:34:23] 🔐✅ LOGIN ÉXITO: Sesión iniciada para "admin" (ID: 1).
+[2026-08-21 10:34:23] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:34:30] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 10:38:45] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 10:38:47] 🚪 LOGOUT: Sesión finalizada para el usuario "admin".
+[2026-08-21 10:38:47] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-21 10:38:50] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-21 10:39:00] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:39:00] 🔐 LOGIN: Intento de inicio de sesión para el usuario "admin"...
+[2026-08-21 10:39:00] 🔐✅ LOGIN ÉXITO: Sesión iniciada para "admin" (ID: 1).
+[2026-08-21 10:39:00] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:39:04] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:39:04] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:39:51] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 10:41:09] 🚪 LOGOUT: Sesión finalizada para el usuario "admin".
+[2026-08-21 10:41:09] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-21 10:41:14] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:41:14] 🔐 LOGIN: Intento de inicio de sesión para el usuario "admin"...
+[2026-08-21 10:41:14] 🔐✅ LOGIN ÉXITO: Sesión iniciada para "admin" (ID: 1).
+[2026-08-21 10:41:14] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:41:24] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 10:41:24] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 10:41:26] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 10:41:27] 🚪 LOGOUT: Sesión finalizada para el usuario "admin".
+[2026-08-21 10:41:27] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
+[2026-08-21 10:41:31] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:41:31] 🔐 LOGIN: Intento de inicio de sesión para el usuario "admin"...
+[2026-08-21 10:41:31] 🔐✅ LOGIN ÉXITO: Sesión iniciada para "admin" (ID: 1).
+[2026-08-21 10:41:31] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 10:41:33] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-21 10:41:34] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-21 10:41:35] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 10:41:42] 🚪 LOGOUT: Sesión finalizada para el usuario "admin".
+[2026-08-21 10:41:42] 🌐 GET /login - El usuario visitó la página de Iniciar Sesión.
