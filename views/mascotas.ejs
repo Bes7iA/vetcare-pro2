@@ -20,14 +20,16 @@
 
         <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
             <table class="w-full text-left border-collapse">
-                <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 text-sm font-bold">
+                <thead class="bg-slate-100 text-slate-700 uppercase text-xs">
                 <tr>
-                    <th class="p-4">ID</th>
-                    <th class="p-4">Nombre</th>
-                    <th class="p-4">Especie</th>
-                    <th class="p-4">Raza</th>
-                    <th class="p-4">Peso (kg)</th>
-                    <th class="p-4 text-center">Acciones</th>
+                    <th class="py-3 px-4 text-left">ID</th>
+                    <th class="py-3 px-4 text-left">Dueño</th>
+                    <th class="py-3 px-4 text-left">Mascota</th>
+                    <th class="py-3 px-4 text-left">Especie</th>
+                    <th class="py-3 px-4 text-left">Raza</th>
+                    <th class="py-3 px-4 text-left">Peso (kg)</th>
+                    <th class="py-3 px-4 text-left">Fecha Ingreso</th>
+                    <th class="py-3 px-4 text-center">Acciones</th>
                 </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-600 text-sm">
@@ -35,10 +37,18 @@
                     <% mascotas.forEach(mascota => { %>
                         <tr class="hover:bg-slate-50">
                             <td class="p-4 font-mono text-slate-400"><%= mascota.id %></td>
-                            <td class="p-4 font-semibold text-slate-800"><%= mascota.nombre %></td>
+                            <!-- 1. DUEÑO PRIMERO -->
+                            <td class="p-4 font-semibold text-slate-800"><%= mascota.dueno || 'Sin registrar' %></td>
+                            <!-- 2. NOMBRE MASCOTA -->
+                            <td class="p-4 font-medium text-teal-700"><%= mascota.nombre %></td>
                             <td class="p-4"><%= mascota.especie %></td>
-                            <td class="p-4"><%= mascota.raza %></td>
-                            <td class="p-4"><%= mascota.peso_kg %> kg</td>
+                            <td class="p-4"><%= mascota.raza || '-' %></td>
+                            <td class="p-4"><%= mascota.peso_kg ? mascota.peso_kg + ' kg' : '-' %></td>
+                            <!-- 3. FECHA DE INGRESO -->
+                            <td class="p-4 text-slate-500">
+                                <%= mascota.fecha_ingreso ? new Date(mascota.fecha_ingreso).toLocaleDateString('es-CL') : '-' %>
+                            </td>
+                            <!-- 4. ACCIONES -->
                             <td class="p-4 flex justify-center gap-2">
                                 <a href="/mascotas/editar/<%= mascota.id %>" class="text-amber-600 hover:text-amber-700 font-medium">Editar</a>
                                 <a href="/mascotas/eliminar/<%= mascota.id %>" class="text-rose-600 hover:text-rose-700 font-medium">Eliminar</a>
@@ -47,7 +57,8 @@
                     <% }); %>
                 <% } else { %>
                     <tr>
-                        <td colspan="6" class="p-8 text-center text-slate-400">
+                        <!-- Ajustado colspan a 8 -->
+                        <td colspan="8" class="p-8 text-center text-slate-400">
                             No hay mascotas registradas en la base de datos.
                         </td>
                     </tr>
