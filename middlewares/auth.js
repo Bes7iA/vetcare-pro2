@@ -3,7 +3,7 @@ export const estaAutenticado = (req, res, next) => {
     if (req.session.usuario) {
         return next();
     }
-    res.redirect('/login');
+    res.redirect('/autenticacion/login');
 };
 
 // Evita que un usuario ya logueado vuelva a ver las pantallas de login/registro

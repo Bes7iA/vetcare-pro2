@@ -16,7 +16,7 @@ const router = express.Router();
 // Configuración del enrutador (router) con el metodo HTPP Get (aunque existen Post, Put, Delete)
 // RUTA DE INICIO (/)
 router.get('/', (req, res, next) => {
-    registrarActividad("🌐 GET / - El usuario visitó la página de Inicio.");
+    registrarActividad("✔️🌐 GET / - El usuario visitó la página de Inicio.");
     const data = {
         titulo: "Inicio | VetCare Pro",
         nombreClinica: "VetCare Pro",
@@ -28,7 +28,7 @@ router.get('/', (req, res, next) => {
 
 // RUTA NUEVA: SERVICIOS (/servicios)
 router.get('/servicios', (req, res, next) => {
-    registrarActividad("🌐 GET /servicios - El usuario visitó la página de Servicios.");
+    registrarActividad("✔️🌐 GET /servicios - El usuario visitó la página de Servicios.");
     const data = {
         titulo: "Servicios | VetCare Pro",
         nombreClinica: "VetCare Pro",
@@ -47,7 +47,7 @@ router.get('/servicios', (req, res, next) => {
 
 // RUTA NUEVA: CONTACTO (/contacto)
 router.get('/contacto', (req, res, next) => {
-    registrarActividad("🌐 GET /contacto - El usuario visitó la página de Contacto.");
+    registrarActividad("✔️🌐 GET /contacto - El usuario visitó la página de Contacto.");
     const data = {
         titulo: "Contacto | VetCare Pro",
         nombreClinica: "VetCare Pro",
@@ -74,7 +74,7 @@ router.post('/enviar-consulta', async (req, res) => {
 
         // 1. Validación del email con la dependencia 'validator'
         if (!validator.isEmail(email)) {
-            registrarActividad(`🌐❌ POST /enviar-consulta - RECHAZADO: Intento de formulario con email inválido (${email}).`);
+            registrarActividad(`⚠️🌐 POST /enviar-consulta - RECHAZADO: Email inválido (${email}).`);
             return res.status(400).render('error', {
                 message: 'El correo electrónico ingresado no tiene un formato válido',
                 error: { status: 400, stack: 'Reintenta con un email real.' },
@@ -85,7 +85,7 @@ router.post('/enviar-consulta', async (req, res) => {
         // 1.1 Abrir la conexión a la base de datos (PASO CRÍTICO)
         registrarActividad(`💾 BASE DE DATOS: Intentando conectar a PostgreSQL en ${config.db.host}:${config.db.port}.`);
         await conexion.connect();
-        registrarActividad(`💾 BASE DE DATOS: Conexión a PostgreSQL establecida con éxito.`);
+        registrarActividad(`✔️💾 BASE DE DATOS: Conexión a PostgreSQL establecida con éxito.`);
 
         registrarActividad(`🌐 POST /enviar-consulta - PROCESANDO: Iniciando envío de correo para ${email}...`);
 
@@ -118,7 +118,7 @@ router.post('/enviar-consulta', async (req, res) => {
 
         // 4. Envío del correo electrónico configurado de forma asincrónica | Dependendia 'nodemailer'
         await transporter.sendMail(mailOptions);
-        registrarActividad(`🌐 POST /enviar-consulta - ÉXITO: Correo enviado correctamente desde ${email}.`);
+        registrarActividad(`✔️🌐 POST /enviar-consulta - ÉXITO: Correo enviado correctamente desde ${email}.`);
 
         // 4.1 Inserción de datos en la BD - PostgreSQL a través de una Consulta SQL Parametrizada
         registrarActividad(`💾 BASE DE DATOS: Ejecutando un INSERT en la base de datos PostgreSQL.`);
@@ -130,7 +130,7 @@ router.post('/enviar-consulta', async (req, res) => {
             dayjs().format('YYYY-MM-DD HH:mm:ss')
         ];
         await conexion.query(consultaSql, valores);
-        registrarActividad(`💾 BASE DE DATOS: Registro insertado exitosamente en PostgreSQL.`);
+        registrarActividad(`✔️💾 BASE DE DATOS: Registro insertado exitosamente en PostgreSQL.`);
 
         // 5. Respuesta al cliente con una vista HTML
         res.render('confirmacion', {
@@ -150,7 +150,7 @@ router.post('/enviar-consulta', async (req, res) => {
         // 6. Cerrar la conexión a la base de datos PostgreSQL
         registrarActividad(`💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.`);
         await conexion.end();
-        registrarActividad(`💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.`);
+        registrarActividad(`✔️💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.`);
     }
 });
 

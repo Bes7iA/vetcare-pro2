@@ -13,7 +13,7 @@ import { config } from './config/config.js';
 import indexRouter from "./routes/index.js";
 import usersRouter from "./routes/users.js";
 import mascotasRouter from './routes/mascotas.js';
-import authRouter from './routes/autentication.js'; // Importamos el router de auth
+import authRouter from './routes/autenticacion.js';
 
 // La creación del objeto que levanta el servidor
 const app = express();
@@ -43,7 +43,7 @@ app.use(session({
         },
         createTableIfMissing: true // Crea automáticamente la tabla session en PostgreSQL
     }),
-    secret: config.sessionSecret,
+    secret: config.session.secret,
     resave: false,
     saveUninitialized: false,
     cookie: { maxAge: 30 * 24 * 60 * 60 * 1000 } // 30 días
@@ -57,7 +57,7 @@ app.use((req, res, next) => {
 });
 
 // --- DECLARACIÓN DE RUTAS ---
-app.use('/', authRouter); // Rutas de login, registro y logout
+app.use('/autenticacion', authRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/mascotas', mascotasRouter);

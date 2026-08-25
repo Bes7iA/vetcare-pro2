@@ -7,58 +7,62 @@
 <div>
     <%- include('partials/navbar') %>
 
-    <main class="max-w-4xl mx-auto p-6">
+    <main class="max-w-7xl mx-auto p-6">
         <div class="flex justify-between items-center mb-6">
             <div>
                 <h1 class="text-3xl font-bold text-slate-800"><%= titulo %></h1>
                 <p class="text-slate-500"><%= clinica %></p>
             </div>
-            <a href="/mascotas/nueva" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
+            <a href="/mascotas/crear" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
                 Registrar Nueva Mascota
             </a>
         </div>
 
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-x-auto">
             <table class="w-full text-left border-collapse">
                 <thead class="bg-slate-100 text-slate-700 uppercase text-xs">
                 <tr>
-                    <th class="py-3 px-4 text-left">ID</th>
-                    <th class="py-3 px-4 text-left">Dueño</th>
-                    <th class="py-3 px-4 text-left">Mascota</th>
-                    <th class="py-3 px-4 text-left">Especie</th>
-                    <th class="py-3 px-4 text-left">Raza</th>
-                    <th class="py-3 px-4 text-left">Peso (kg)</th>
-                    <th class="py-3 px-4 text-left">Fecha Ingreso</th>
-                    <th class="py-3 px-4 text-center">Acciones</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">ID</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Dueño</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Mascota</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Especie</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Raza</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Edad</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Sexo</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Peso (kg)</th>
+                    <th class="py-3 px-4 text-left whitespace-nowrap">Fecha Ingreso</th>
+                    <th class="py-3 px-4 text-center whitespace-nowrap">Acciones</th>
                 </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-600 text-sm">
                 <% if (mascotas && mascotas.length > 0) { %>
                     <% mascotas.forEach(mascota => { %>
                         <tr class="hover:bg-slate-50">
-                            <td class="p-4 font-mono text-slate-400"><%= mascota.id %></td>
-                            <!-- 1. DUEÑO PRIMERO -->
-                            <td class="p-4 font-semibold text-slate-800"><%= mascota.dueno || 'Sin registrar' %></td>
-                            <!-- 2. NOMBRE MASCOTA -->
-                            <td class="p-4 font-medium text-teal-700"><%= mascota.nombre %></td>
-                            <td class="p-4"><%= mascota.especie %></td>
-                            <td class="p-4"><%= mascota.raza || '-' %></td>
-                            <td class="p-4"><%= mascota.peso_kg ? mascota.peso_kg + ' kg' : '-' %></td>
-                            <!-- 3. FECHA DE INGRESO -->
-                            <td class="p-4 text-slate-500">
+                            <td class="p-4 font-mono text-slate-400 whitespace-nowrap"><%= mascota.id %></td>
+                            <td class="p-4 font-semibold text-slate-800 whitespace-nowrap"><%= mascota.dueno || 'Sin registrar' %></td>
+                            <td class="p-4 font-medium text-teal-700 whitespace-nowrap"><%= mascota.nombre %></td>
+                            <td class="p-4 whitespace-nowrap"><%= mascota.especie %></td>
+                            <td class="p-4 whitespace-nowrap"><%= mascota.raza || '-' %></td>
+                            <td class="p-4 whitespace-nowrap"><%= mascota.edad %> años</td>
+                            <td class="p-4 whitespace-nowrap"><%= mascota.sexo %></td>
+                            <td class="p-4 whitespace-nowrap"><%= mascota.peso_kg ? mascota.peso_kg + ' kg' : '-' %></td>
+                            <td class="p-4 text-slate-500 whitespace-nowrap">
                                 <%= mascota.fecha_ingreso ? new Date(mascota.fecha_ingreso).toLocaleDateString('es-CL') : '-' %>
                             </td>
-                            <!-- 4. ACCIONES -->
-                            <td class="p-4 flex justify-center gap-2">
-                                <a href="/mascotas/editar/<%= mascota.id %>" class="text-amber-600 hover:text-amber-700 font-medium">Editar</a>
-                                <a href="/mascotas/eliminar/<%= mascota.id %>" class="text-rose-600 hover:text-rose-700 font-medium">Eliminar</a>
+                            <td class="p-4 whitespace-nowrap">
+                                <div class="flex justify-center gap-3">
+                                    <a href="/mascotas/<%= mascota.id %>/editar" class="text-amber-600 hover:text-amber-700" title="Editar mascota">✏️</a>
+                                    <form action="/mascotas/<%= mascota.id %>/eliminar" method="POST" class="inline"
+                                          onsubmit="return confirm('¿Seguro que deseas eliminar a ' + '<%= mascota.nombre %>' + '? Esta acción no se puede deshacer.');">
+                                        <button type="submit" class="text-rose-600 hover:text-rose-700" title="Eliminar mascota">🗑️</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     <% }); %>
                 <% } else { %>
                     <tr>
-                        <!-- Ajustado colspan a 8 -->
-                        <td colspan="8" class="p-8 text-center text-slate-400">
+                        <td colspan="10" class="p-8 text-center text-slate-400">
                             No hay mascotas registradas en la base de datos.
                         </td>
                     </tr>

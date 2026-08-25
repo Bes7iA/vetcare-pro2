@@ -29,13 +29,13 @@
             <span class="text-teal-700 font-bold bg-teal-50 px-3 py-1 rounded-full">
                 Hola, <%= usuario.nombre %>
             </span>
-            <form action="/logout" method="POST" class="inline">
+            <form action="/autenticacion/logout" method="POST" class="inline">
                 <button type="submit" class="text-red-500 hover:text-red-700 font-semibold">
                     Cerrar sesión
                 </button>
             </form>
         <% } else { %>
-            <a href="/login" class="px-4 py-2 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition">
+            <a href="/autenticacion/login" class="px-4 py-2 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition">
                 Iniciar sesión
             </a>
         <% } %>

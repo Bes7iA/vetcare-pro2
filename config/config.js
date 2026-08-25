@@ -24,7 +24,7 @@ REQUIRED_ENV_VARS.forEach((envVar) => {
     }
 });
 
-registrarActividad("🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.");
+registrarActividad("✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.");
 
 export const config = {
     db: {
@@ -38,5 +38,7 @@ export const config = {
         user: process.env.EMAIL_USER,
         password: process.env.EMAIL_PASSWORD
     },
-    sessionSecret: process.env.SESSION_SECRET
+    session: {
+        secret: process.env.SESSION_SECRET
+    }
 };
