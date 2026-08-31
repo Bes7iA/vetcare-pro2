@@ -1,9 +1,410 @@
-comienzo de log desde cero 21-08-2026 12:15
+[2026-08-10 12:14:57] ❌ JSON - Error al crear el archivo JSON: ENOENT: no such file or directory, open 'D:\Trabajo\Proyectos JAVASCRIPT\app-vet-monolito\public\data\2026-08-10 12:14:57.json'
+[2026-08-10 12:16:57] ✅ JSON - Creación del archivo 2026-08-10-12_16_57.json realizada con éxito.
+[2026-08-10 12:16:57] ✅ JSON - Archivo 2026-08-10-12_16_57.json leído con éxito.
+[2026-08-19 11:14:42] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 11:14:42] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 11:14:50] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 11:14:54] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 11:14:55] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 11:14:56] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-19 11:17:09] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 11:17:09] 💾 BASE DE DATOS: Intentando conectar a PostgreSQL en localhost:5432.
+[2026-08-19 11:17:09] 💾 BASE DE DATOS: Conexión a PostgreSQL establecida con éxito.
+[2026-08-19 11:17:09] 🌐 POST /enviar-consulta - PROCESANDO: Iniciando envío de correo para chuck@gmail.com...
+[2026-08-19 11:17:12] ❌🌐 POST /enviar-consulta - ERROR CRÍTICO: connect ECONNREFUSED 2a00:1450:400b:c03::6d:465
+[2026-08-19 11:17:12] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-19 11:17:12] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-19 11:17:21] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 11:20:36] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-19 11:20:36] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-19 11:20:41] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-19 11:20:42] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-08-19 11:20:43] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-08-19 11:20:58] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-19 11:20:58] 💾 BASE DE DATOS: Intentando conectar a PostgreSQL en localhost:5432.
+[2026-08-19 11:20:58] 💾 BASE DE DATOS: Conexión a PostgreSQL establecida con éxito.
+[2026-08-19 11:20:58] 🌐 POST /enviar-consulta - PROCESANDO: Iniciando envío de correo para cnorris@gmail.com...
+[2026-08-19 11:21:03] 🌐 POST /enviar-consulta - ÉXITO: Correo enviado correctamente desde cnorris@gmail.com.
+[2026-08-19 11:21:03] 💾 BASE DE DATOS: Ejecutando un INSERT en la base de datos PostgreSQL.
+[2026-08-19 11:21:03] 💾 BASE DE DATOS: Registro insertado exitosamente en PostgreSQL.
+[2026-08-19 11:21:03] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-19 11:21:03] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-21 11:08:04] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 11:08:04] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 11:08:04] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 11:08:17] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 11:08:17] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 11:08:17] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 11:08:18] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:08:27] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 11:08:49] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 11:08:49] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 11:08:49] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:12:34] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 11:12:34] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 11:12:34] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 11:12:36] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:12:38] 🐾 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.
+[2026-08-21 11:12:40] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-21 11:12:40] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:24:26] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 11:24:26] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 11:24:26] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 11:24:47] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:24:48] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 11:24:53] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 11:24:53] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 11:24:53] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:24:54] 🌐 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.
+[2026-08-21 11:25:12] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 11:25:12] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 11:25:12] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 11:25:31] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:25:33] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-21 11:25:33] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:25:34] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 11:25:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 11:25:40] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 11:25:40] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:25:42] 🌐 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.
+[2026-08-21 11:29:01] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 11:29:01] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 11:29:01] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 11:29:05] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:29:06] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-21 11:29:06] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:29:08] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 11:29:14] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 11:29:14] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 11:29:14] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 11:29:15] 🌐 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.
+[2026-08-21 12:02:25] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 12:02:25] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 12:02:25] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 12:02:27] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:02:28] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:02:28] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:02:29] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 12:03:23] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:03:23] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:03:23] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:03:25] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:03:25] 🌐 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.}
+[2026-08-21 12:03:25] ❌ GET /mascotas - Error Crítico: undefined is not a function
+[2026-08-21 12:05:19] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 12:05:19] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 12:05:19] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 12:05:20] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:05:22] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:05:22] 🌐 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.}
+[2026-08-21 12:05:24] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:05:24] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:05:25] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 12:05:36] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:05:36] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:05:36] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:05:37] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:05:37] 🌐 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.}
+[2026-08-21 12:05:45] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:05:45] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:05:55] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 12:05:55] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 12:05:55] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 12:05:56] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:05:58] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 12:06:03] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:06:03] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:06:03] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:06:04] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:06:04] 🌐 GET /mascotas - Acceso autorizado para ffelipecuevasc@gmail.com.}
+[2026-08-21 12:06:05] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:06:05] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:44:29] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-21 12:44:29] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-21 12:44:29] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-21 12:44:31] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:44:45] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-21 12:44:52] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:44:52] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-21 12:44:52] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-21 12:44:54] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-21 12:44:54] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-21 12:44:54] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-21 12:44:54] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 08:53:14] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-26 08:53:14] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-26 08:55:51] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-26 08:55:51] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-26 09:01:47] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-26 09:01:47] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-26 09:01:47] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-26 09:01:50] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-26 09:01:53] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-26 09:02:09] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 09:02:09] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-26 09:02:09] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-26 09:02:11] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 09:02:11] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 09:02:11] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 09:02:11] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 09:02:11] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 09:02:17] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 09:02:17] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la edición de mascotas exitosamente.
+[2026-08-26 09:02:17] 🌐 GET /mascotas/id/editar - Formulario de edición de mascotas solicitado y en proceso de renderizado.
+[2026-08-26 09:02:17] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 09:02:17] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 09:02:20] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 09:02:20] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 09:02:20] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 09:02:20] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 09:02:20] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 09:02:26] 🌐 GET /mascotas/crear - Acceso autorizado a crear una mascota para ffelipecuevasc@gmail.com.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la creación de mascotas exitosamente.
+[2026-08-26 09:02:46] 🌐 POST /mascotas/crear - Éxito, mascota Monstruo registrada exitosamente en la BD.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 09:02:46] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 09:02:46] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 09:02:54] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-26 09:02:54] 🌐 GET / - El usuario visitó la página de Inicio.
 
-[2026-08-24 22:37:29] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
-[2026-08-24 22:37:36] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
-[2026-08-24 22:37:36] ✔️🐾 MASCOTAS: El usuario 'admin' visitó el registro de mascotas.
-[2026-08-24 22:37:38] ✔️🌐 GET / - El usuario visitó la página de Inicio.
-[2026-08-24 22:37:40] ✔️🌐 GET /servicios - El usuario visitó la página de Servicios.
-[2026-08-24 22:37:40] ✔️🌐 GET /contacto - El usuario visitó la página de Contacto.
-[2026-08-24 22:37:41] ✔️🌐 GET / - El usuario visitó la página de Inicio.
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-08-26 10:45:02
+======================================================================
+[2026-08-26 10:45:02] ✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-08-26 10:45:03] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-26 10:45:03] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-26 10:45:03] ❌ SERVIDOR: ARRANQUE FALLIDO. No se pudo construir la aplicación Express. Motivo: Cannot read properties of undefined (reading 'length')
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-08-26 10:45:40
+======================================================================
+[2026-08-26 10:45:40] ✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-08-26 10:45:40] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-26 10:45:40] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-26 10:45:40] ✅⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-08-26 10:45:40] ✅⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-08-26 10:45:40] ✅⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-08-26 10:45:40] ✅⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-26 10:45:40] ✅⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-08-26 10:45:40] ✅⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-08-26 10:45:40] ✅⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-08-26 10:45:40] ✅⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-08-26 10:45:40] ✅⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-08-26 10:46:20] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-26 10:46:23] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-26 10:46:29] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 10:46:29] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-26 10:46:29] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-26 10:46:31] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 10:46:31] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 10:46:31] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 10:46:31] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 10:46:31] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 10:47:25] 🌐 GET /mascotas/crear - Acceso autorizado a crear una mascota para ffelipecuevasc@gmail.com.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la creación de mascotas exitosamente.
+[2026-08-26 10:49:08] 🌐 POST /mascotas/crear - Éxito, mascota Pelota registrada exitosamente en la BD.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 10:49:08] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 10:49:08] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 10:52:01] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 10:52:01] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la edición de mascotas exitosamente.
+[2026-08-26 10:52:01] 🌐 GET /mascotas/id/editar - Formulario de edición de mascotas solicitado y en proceso de renderizado.
+[2026-08-26 10:52:01] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 10:52:01] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 10:52:19] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 10:52:19] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 10:52:19] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 10:52:19] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 10:52:19] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-08-26 11:22:51
+======================================================================
+[2026-08-26 11:22:51] ✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-08-26 11:22:51] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-26 11:22:51] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-26 11:22:51] ✅⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-08-26 11:22:51] ✅⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-08-26 11:22:51] ✅⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-08-26 11:22:51] ✅⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-26 11:22:51] ✅⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-08-26 11:22:51] ✅⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-08-26 11:22:51] ✅⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-08-26 11:22:51] ✅⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-08-26 11:22:51] ✅⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-08-26 11:24:29
+======================================================================
+[2026-08-26 11:24:29] ✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-08-26 11:24:29] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-26 11:24:29] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-26 11:24:29] ✅⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-08-26 11:24:29] ✅⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-08-26 11:24:29] ✅⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-08-26 11:24:29] ✅⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-26 11:24:29] ✅⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-08-26 11:24:29] ✅⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-08-26 11:24:29] ✅⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-08-26 11:24:29] ✅⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-08-26 11:24:30] ✅⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-08-26 11:24:33] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-26 11:24:35] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-26 11:24:35] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-26 11:24:36] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-26 11:24:43] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:24:43] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-26 11:24:43] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-26 11:24:45] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:24:45] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 11:24:45] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 11:24:45] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:24:45] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 11:24:54] 🌐 GET /mascotas/crear - Acceso autorizado a crear una mascota para ffelipecuevasc@gmail.com.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la creación de mascotas exitosamente.
+[2026-08-26 11:25:13] 🌐 POST /mascotas/crear - Éxito, mascota Stitch registrada exitosamente en la BD.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:25:13] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:25:13] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 11:25:16] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:25:16] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la edición de mascotas exitosamente.
+[2026-08-26 11:25:16] 🌐 GET /mascotas/id/editar - Formulario de edición de mascotas solicitado y en proceso de renderizado.
+[2026-08-26 11:25:16] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:25:16] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la edición de mascotas exitosamente.
+[2026-08-26 11:25:24] 🌐 POST /mascotas/id/editar - ÉXITO: Mascota Terrible editada exitosamente en la BD.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:25:24] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:25:24] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde la eliminación de mascotas exitosamente.
+[2026-08-26 11:25:40] 🌐 POST /mascotas/id/eliminar - ÉXITO: Mascota editada exitosamente en la BD.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-26 11:25:40] 🌐 GET / - Acceso autorizado a lista de mascotas para ffelipecuevasc@gmail.com.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Conexión a BD PostgreSQL iniciada desde el listado de mascotas exitosamente.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Cerrando la conexión a BD PostgreSQL.
+[2026-08-26 11:25:40] 💾 BASE DE DATOS: Conexión a BD PostgreSQL cerrada exitosamente.
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-08-31 11:29:29
+======================================================================
+[2026-08-31 11:29:29] ✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-08-31 11:29:30] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-31 11:29:30] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-31 11:29:30] 💾 BASE DE DATOS - ORM SEQUELIZE: Intentando establecer conexión con PostgreSQL... 
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.
+[2026-08-31 11:29:30] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT 1+1 AS result [2]
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-08-31 11:29:30] ✅⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-08-31 11:29:30] ✅⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-08-31 11:29:30] ✅⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-08-31 11:29:32] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-31 11:29:35] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-31 11:29:41] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-31 11:29:41] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-31 11:29:41] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-31 11:29:59] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 11:29:59] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [4]
+[2026-08-31 11:30:31] 🌐 GET /duenos/crear - Acceso autorizado a crear un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 11:30:59] 🌐 POST /duenos/crear - Acceso autorizado a crear un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 11:30:59] 💾 ORM SEQUELIZE - SQL: Executed (default): INSERT INTO "duenos" ("id","nombre","email","telefono","direccion","fecha_registro") VALUES (DEFAULT,$1,$2,$3,$4,CURRENT_DATE) RETURNING "id","nombre","email","telefono","direccion","fecha_registro"; [11]
+[2026-08-31 11:30:59] 🌐 POST /duenos/crear - ÉXITO: Dueño Chuck Norris registrado exitosamente en la BD.
+[2026-08-31 11:30:59] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 11:30:59] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [4]
+[2026-08-31 11:31:42] 🌐 GET /duenos/id/editar - Acceso autorizado a editar un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 11:31:42] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 1; [2]
+[2026-08-31 11:31:42] 🌐 GET /duenos/id/editar - Formulario de edición de dueños solicitado correctamente y en proceso de renderización.
+[2026-08-31 11:31:59] 🌐 POST /duenos/id/editar - Acceso autorizado a editar un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 11:31:59] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 1; [3]
+[2026-08-31 11:31:59] 💾 ORM SEQUELIZE - SQL: Executed (default): UPDATE "duenos" SET "nombre"=$1,"direccion"=$2 WHERE "id" = $3 [3]
+[2026-08-31 11:31:59] ❌🌐 POST /duenos/id/editar - No se pudo editar un dueño en la BD. ERROR CRÍTICO: nuevoDueno is not defined
+[2026-08-31 11:32:10] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 11:32:10] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [4]
+[2026-08-31 11:32:24] 🌐 POST /duenos/id/eliminar - Acceso autorizado a eliminar un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 11:32:24] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 1; [4]
+[2026-08-31 11:32:24] 💾 ORM SEQUELIZE - SQL: Executed (default): DELETE FROM "duenos" WHERE "id" = 1 [3]
+[2026-08-31 11:32:24] ❌🌐 POST /duenos/id/eliminar - No se pudo eliminar un dueño en la BD. ERROR CRÍTICO: nuevoDueno is not defined
+[2026-08-31 11:32:35] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-31 11:32:36] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 11:32:36] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [5]
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-08-31 12:22:44
+======================================================================
+[2026-08-31 12:22:44] ✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-08-31 12:22:44] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-08-31 12:22:44] 🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-08-31 12:22:44] 💾 BASE DE DATOS - ORM SEQUELIZE: Intentando establecer conexión con PostgreSQL... 
+[2026-08-31 12:22:44] ✅⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-08-31 12:22:44] ✅⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-08-31 12:22:44] ✅⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-08-31 12:22:44] ✅⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-08-31 12:22:44] ✅⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-08-31 12:22:44] ✅⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.
+[2026-08-31 12:22:45] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT 1+1 AS result [2]
+[2026-08-31 12:22:45] ✅⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.
+[2026-08-31 12:22:45] ✅⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-08-31 12:22:45] ✅⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-08-31 12:22:45] ✅⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-08-31 12:22:45] ✅⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-08-31 12:22:46] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-31 12:22:48] 🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ffelipecuevasc@gmail.com.
+[2026-08-31 12:22:48] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-31 12:22:50] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-31 12:22:56] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-31 12:22:56] 🔐❌ POST /autenticacion/login - RECHAZADO: Contraseña incorrecta (ffelipecuevasc@gmail.com).
+[2026-08-31 12:22:59] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-08-31 12:23:08] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-08-31 12:23:09] 🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:09] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-08-31 12:23:10] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:10] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [4]
+[2026-08-31 12:23:12] 🌐 GET /duenos/crear - Acceso autorizado a crear un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:25] 🌐 POST /duenos/crear - Acceso autorizado a crear un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:25] 💾 ORM SEQUELIZE - SQL: Executed (default): INSERT INTO "duenos" ("id","nombre","email","telefono","direccion","fecha_registro") VALUES (DEFAULT,$1,$2,$3,$4,CURRENT_DATE) RETURNING "id","nombre","email","telefono","direccion","fecha_registro"; [4]
+[2026-08-31 12:23:25] 🌐 POST /duenos/crear - ÉXITO: Dueño Chuck Norris registrado exitosamente en la BD.
+[2026-08-31 12:23:25] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:25] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-08-31 12:23:29] 🌐 GET /duenos/id/editar - Acceso autorizado a editar un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:29] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 2; [3]
+[2026-08-31 12:23:29] 🌐 GET /duenos/id/editar - Formulario de edición de dueños solicitado correctamente y en proceso de renderización.
+[2026-08-31 12:23:43] 🌐 POST /duenos/id/editar - Acceso autorizado a editar un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:43] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 2; [5]
+[2026-08-31 12:23:43] 💾 ORM SEQUELIZE - SQL: Executed (default): UPDATE "duenos" SET "telefono"=$1,"direccion"=$2 WHERE "id" = $3 [4]
+[2026-08-31 12:23:43] 🌐 POST /duenos/id/editar - ÉXITO: Dueño Chuck Norris editado exitosamente en la BD.
+[2026-08-31 12:23:43] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 12:23:43] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [2]
+[2026-08-31 12:24:09] 🌐 POST /duenos/id/eliminar - Acceso autorizado a eliminar un dueño para ffelipecuevasc@gmail.com.
+[2026-08-31 12:24:09] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 2; [6]
+[2026-08-31 12:24:09] 💾 ORM SEQUELIZE - SQL: Executed (default): DELETE FROM "duenos" WHERE "id" = 2 [4]
+[2026-08-31 12:24:09] 🌐 POST /duenos/id/eliminar - ÉXITO: Dueño Chuck Norris eliminado exitosamente en la BD.
+[2026-08-31 12:24:09] 🌐 GET / - Acceso autorizado a lista de dueños para ffelipecuevasc@gmail.com.
+[2026-08-31 12:24:09] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [5]

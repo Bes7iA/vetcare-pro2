@@ -1,15 +1,23 @@
-// Verifica si el usuario está logueado para proteger rutas
+/**
+ * Middleware: estaAutenticado
+ * Protege rutas que SOLO pueden ver usuarios logueados (ej: un panel privado).
+ * Si no hay sesión activa, redirige al login.
+ */
 export const estaAutenticado = (req, res, next) => {
     if (req.session.usuario) {
-        return next();
+        return next(); // Hay sesión → dejamos pasar el request
     }
-    res.redirect('/autenticacion/login');
+    return res.redirect('/autenticacion/login');
 };
 
-// Evita que un usuario ya logueado vuelva a ver las pantallas de login/registro
+/**
+ * Middleware: esInvitado
+ * Protege rutas que SOLO tienen sentido para quien NO ha iniciado sesión
+ * (ej: no tiene sentido mostrarle el formulario de login a alguien ya logueado).
+ */
 export const esInvitado = (req, res, next) => {
     if (!req.session.usuario) {
-        return next();
+        return next(); // No hay sesión → dejamos pasar el request
     }
-    res.redirect('/mascotas');
+    return res.redirect('/');
 };

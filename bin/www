@@ -1,24 +1,62 @@
 #!/usr/bin/env node
 
 // Importación de dependencias externas (módulos o librerías) según el éstandar ES6
-import app from "../app.js";
 import debugLib from "debug";
 import http from "http";
 
+// Este import SÍ es seguro dejarlo estático: helpers/logger.js no depende
+// de rutas, sesión ni base de datos, así que no puede fallar por esos motivos.
+import { registrarActividad, registrarSeparadorInicio } from "../helpers/logger.js";
+
 const debug = debugLib("vet-express:server");
 
-// Configuración del puerto en el que estará activo nuestro servidor HTTP (Express.js)
-const port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+registrarSeparadorInicio();
+registrarActividad("✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).");
 
-// Creación del servidor HTTP (Express.js)
-const server = http.createServer(app);
+/**
+ * Red de seguridad GLOBAL: captura cualquier excepción o promesa rechazada
+ * que se nos haya escapado en cualquier otra parte del código.
+ * Es el último recurso antes de que Node.js mate el proceso "a ciegas",
+ * sin dejar rastro en nuestro logs/activity.log.
+ */
+process.on('uncaughtException', (error) => {
+  registrarActividad(`❌ SERVIDOR: EXCEPCIÓN NO CAPTURADA. El proceso se detendrá. Motivo: ${error.message}`);
+  console.error('Excepción no capturada:', error);
+  process.exit(1); // Tras un uncaughtException NUNCA se debe intentar seguir operando.
+});
 
-// Activación del servidor HTTP para que escuche (listen) en el puerto configurado (3000)
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
-console.log(`SERVIDOR HTTP - Aplicación desplegada en: http://localhost:${port}`);
+process.on('unhandledRejection', (reason) => {
+  registrarActividad(`❌ SERVIDOR: PROMESA RECHAZADA SIN MANEJAR. Motivo: ${reason}`);
+  console.error('Promesa rechazada sin manejar:', reason);
+  process.exit(1);
+});
+
+async function iniciarServidor() {
+  let app;
+
+  try {
+    const modulo = await import("../app.js");
+    app = modulo.default;
+    registrarActividad("✅⚙️ SERVIDOR: app.js importado y construido sin errores.");
+  } catch (error) {
+    registrarActividad(`❌ SERVIDOR: ARRANQUE FALLIDO. No se pudo construir la aplicación Express. Motivo: ${error.message}`);
+    console.error("No se pudo iniciar el servidor. Revisa 'logs/activity.log' para más detalles.");
+    console.error(error);
+    process.exit(1);
+    return;
+  }
+
+  const port = normalizePort(process.env.PORT || '3000');
+  app.set('port', port);
+
+  const server = http.createServer(app);
+
+  server.listen(port);
+  server.on('error', (error) => onError(error, port));
+  server.on('listening', () => onListening(server));
+}
+
+iniciarServidor();
 
 // Normalización del puerto del servidor HTTP (Express.js)
 function normalizePort(val) {
@@ -29,26 +67,31 @@ function normalizePort(val) {
 }
 
 // Manejador de errores del servidor HTTP (Express.js)
-function onError(error) {
+function onError(error, port) {
   if (error.syscall !== 'listen') throw error;
   const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
   switch (error.code) {
     case 'EACCES':
+      registrarActividad(`❌ SERVIDOR: ARRANQUE FALLIDO. ${bind} requiere privilegios elevados (EACCES).`);
       console.error(bind + ' requires elevated privileges');
       process.exit(1);
       break;
     case 'EADDRINUSE':
+      registrarActividad(`❌ SERVIDOR: ARRANQUE FALLIDO. ${bind} ya está en uso por otro proceso (EADDRINUSE).`);
       console.error(bind + ' is already in use');
       process.exit(1);
       break;
     default:
+      registrarActividad(`❌ SERVIDOR: ARRANQUE FALLIDO. Error inesperado al escuchar en ${bind}: ${error.message}`);
       throw error;
   }
 }
 
 // Manejador de evento "listening" del servidor HTTP (Express.js)
-function onListening() {
+function onListening(server) {
   const addr = server.address();
   const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
+  registrarActividad(`✅⚙️ SERVIDOR: Arranque exitoso. Escuchando en ${bind}.`);
+  console.log(`SERVIDOR HTTP - Aplicación desplegada en: http://localhost:${addr.port}`);
   debug('Listening on ' + bind);
 }

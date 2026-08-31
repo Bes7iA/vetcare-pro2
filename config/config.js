@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { registrarActividad } from "../helpers/logger.js";
+import {registrarActividad} from "../helpers/logger.js";
 
 dotenv.config();
 
@@ -24,21 +24,21 @@ REQUIRED_ENV_VARS.forEach((envVar) => {
     }
 });
 
-registrarActividad("✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.");
+registrarActividad("🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.");
 
 export const config = {
     db: {
         host: process.env.DB_HOST,
-        port: process.env.DB_PORT,
+        port: parseInt(process.env.DB_PORT, 10),
         user: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME
+        database: process.env.DB_NAME,
     },
     email: {
         user: process.env.EMAIL_USER,
-        password: process.env.EMAIL_PASSWORD
+        password: process.env.EMAIL_PASSWORD,
     },
     session: {
-        secret: process.env.SESSION_SECRET
+        secret: process.env.SESSION_SECRET,
     }
 };

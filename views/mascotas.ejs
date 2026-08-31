@@ -1,77 +1,88 @@
+<!-- views/mascotas.ejs -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <%- include('partials/head') %>
 </head>
-<body class="bg-slate-50 min-h-screen flex flex-col justify-between">
-<div>
-    <%- include('partials/navbar') %>
+<body class="flex flex-col min-h-screen">
+<%- include('partials/navbar') %>
 
-    <main class="max-w-7xl mx-auto p-6">
-        <div class="flex justify-between items-center mb-6">
-            <div>
-                <h1 class="text-3xl font-bold text-slate-800"><%= titulo %></h1>
-                <p class="text-slate-500"><%= clinica %></p>
-            </div>
-            <a href="/mascotas/crear" class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
-                Registrar Nueva Mascota
+<main class="flex-grow">
+    <section class="section-container text-center pb-0">
+        <h1 class="text-4xl font-bold mb-4 text-teal-600">Mis Mascotas</h1>
+        <p class="text-slate-600 text-lg">
+            Bienvenido/a, <strong class="text-teal-700"><%= usuario.nombre %></strong>. Este es el listado de mascotas registradas en el sistema.
+        </p>
+    </section>
+
+    <section class="section-container">
+
+        <!-- Botón "Agregar mascota": apunta a la futura ruta de creación (Fase 4) -->
+        <div class="flex justify-end mb-6">
+            <a href="/mascotas/crear"
+               class="inline-block bg-teal-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-lg shadow-teal-100">
+                + Agregar mascota
             </a>
         </div>
 
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-x-auto">
-            <table class="w-full text-left border-collapse">
-                <thead class="bg-slate-100 text-slate-700 uppercase text-xs">
-                <tr>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">ID</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Dueño</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Mascota</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Especie</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Raza</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Edad</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Sexo</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Peso (kg)</th>
-                    <th class="py-3 px-4 text-left whitespace-nowrap">Fecha Ingreso</th>
-                    <th class="py-3 px-4 text-center whitespace-nowrap">Acciones</th>
-                </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-100 text-slate-600 text-sm">
-                <% if (mascotas && mascotas.length > 0) { %>
-                    <% mascotas.forEach(mascota => { %>
-                        <tr class="hover:bg-slate-50">
-                            <td class="p-4 font-mono text-slate-400 whitespace-nowrap"><%= mascota.id %></td>
-                            <td class="p-4 font-semibold text-slate-800 whitespace-nowrap"><%= mascota.dueno || 'Sin registrar' %></td>
-                            <td class="p-4 font-medium text-teal-700 whitespace-nowrap"><%= mascota.nombre %></td>
-                            <td class="p-4 whitespace-nowrap"><%= mascota.especie %></td>
-                            <td class="p-4 whitespace-nowrap"><%= mascota.raza || '-' %></td>
-                            <td class="p-4 whitespace-nowrap"><%= mascota.edad %> años</td>
-                            <td class="p-4 whitespace-nowrap"><%= mascota.sexo %></td>
-                            <td class="p-4 whitespace-nowrap"><%= mascota.peso_kg ? mascota.peso_kg + ' kg' : '-' %></td>
-                            <td class="p-4 text-slate-500 whitespace-nowrap">
-                                <%= mascota.fecha_ingreso ? new Date(mascota.fecha_ingreso).toLocaleDateString('es-CL') : '-' %>
-                            </td>
-                            <td class="p-4 whitespace-nowrap">
-                                <div class="flex justify-center gap-3">
-                                    <a href="/mascotas/<%= mascota.id %>/editar" class="text-amber-600 hover:text-amber-700" title="Editar mascota">✏️</a>
+        <% if (listaMascotas.length === 0) { %>
+            <!-- ESTADO VACÍO: todavía no hay ninguna mascota registrada -->
+            <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <p class="text-2xl mb-2">🐾</p>
+                <p class="text-slate-700 font-semibold text-lg mb-1">Todavía no hay mascotas registradas.</p>
+                <p class="text-slate-400 text-sm mb-6">Registra a tu primer regalón para comenzar a llevar su historial en VetCare Pro.</p>
+                <a href="/mascotas/crear"
+                   class="inline-block bg-teal-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-teal-700 transition">
+                    Registrar primera mascota
+                </a>
+            </div>
+        <% } else { %>
+            <!-- TABLA DE LISTADO: recorre listaMascotas, ordenada por id DESC desde el controlador -->
+            <!-- TABLA DE LISTADO: recorre listaMascotas, ordenada por id DESC desde el controlador -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                    <tr class="border-b border-slate-100 text-xs uppercase tracking-widest text-slate-400">
+                        <th class="px-6 py-4 font-bold">Nombre</th>
+                        <th class="px-6 py-4 font-bold">Especie</th>
+                        <th class="px-6 py-4 font-bold">Raza</th>
+                        <th class="px-6 py-4 font-bold">Edad</th>
+                        <th class="px-6 py-4 font-bold">Sexo</th>
+                        <th class="px-6 py-4 font-bold">Fecha de Ingreso</th>
+                        <th class="px-6 py-4 font-bold text-right">Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <% listaMascotas.forEach(mascota => { %>
+                        <tr class="border-b border-slate-50 last:border-0 hover:bg-teal-50/50 transition">
+                            <td class="px-6 py-4 font-semibold text-slate-800"><%= mascota.nombre %></td>
+                            <td class="px-6 py-4 text-slate-600"><%= mascota.especie %></td>
+                            <td class="px-6 py-4 text-slate-600"><%= mascota.raza || '—' %></td>
+                            <td class="px-6 py-4 text-slate-600"><%= mascota.edad %> años</td>
+                            <td class="px-6 py-4 text-slate-600"><%= mascota.sexo %></td>
+                            <td class="px-6 py-4 text-slate-600"><%= mascota.fechaIngresoFormateada %></td>
+                            <td class="px-6 py-4 text-right whitespace-nowrap">
+                                <div class="flex items-center justify-end gap-3">
+                                    <!-- Editar es un <a> que se activa con metodo GET -->
+                                    <a href="/mascotas/<%= mascota.id %>/editar"
+                                       class="text-teal-600 hover:text-teal-800 transition"
+                                       title="Editar mascota">✏️</a>
+                                    <!-- Eliminar es un <form> porque requiere activación por metodo POST -->
                                     <form action="/mascotas/<%= mascota.id %>/eliminar" method="POST" class="inline"
-                                          onsubmit="return confirm('¿Seguro que deseas eliminar a ' + '<%= mascota.nombre %>' + '? Esta acción no se puede deshacer.');">
-                                        <button type="submit" class="text-rose-600 hover:text-rose-700" title="Eliminar mascota">🗑️</button>
+                                          onsubmit="return confirm('¿Seguro que deseas eliminar esta mascota? Esta acción no se puede deshacer.');">
+                                        <button type="submit" class="text-red-500 hover:text-red-700 transition" title="Eliminar mascota">🗑️</button>
                                     </form>
                                 </div>
                             </td>
                         </tr>
-                    <% }); %>
-                <% } else { %>
-                    <tr>
-                        <td colspan="10" class="p-8 text-center text-slate-400">
-                            No hay mascotas registradas en la base de datos.
-                        </td>
-                    </tr>
-                <% } %>
-                </tbody>
-            </table>
-        </div>
-    </main>
-</div>
+                    <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        <% } %>
+
+    </section>
+</main>
 
 <%- include('partials/footer') %>
 </body>

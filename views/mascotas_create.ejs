@@ -1,73 +1,75 @@
-<%- include('partials/head') %>
+<!-- views/mascotas_create.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-50">
 <%- include('partials/navbar') %>
 
-<main class="max-w-xl mx-auto p-6">
-    <div class="mb-6">
-        <h1 class="text-2xl font-bold text-slate-800"><%= titulo %></h1>
-        <p class="text-slate-500"><%= clinica %></p>
-    </div>
+<main class="flex-grow flex items-center justify-center px-6 py-12">
+    <section class="max-w-lg w-full bg-white p-10 rounded-3xl shadow-xl border border-slate-50">
 
-    <form action="/mascotas/crear" method="POST" class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
-        <!-- DUEÑO -->
-        <div>
-            <label class="block text-sm font-semibold text-slate-700 mb-1">Nombre del Dueño</label>
-            <input type="text" name="dueno" required placeholder="Ej: Juan Pérez" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-teal-500 outline-none">
+        <div class="text-center mb-8">
+            <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-teal-100">
+                🐾
+            </div>
+            <h1 class="text-3xl font-bold text-slate-800 mb-2">Registrar Mascota</h1>
+            <p class="text-slate-500 text-sm">Completa los datos para agregar un nuevo regalón al sistema.</p>
         </div>
 
-        <!-- NOMBRE MASCOTA -->
-        <div>
-            <label class="block text-sm font-semibold text-slate-700 mb-1">Nombre de la Mascota</label>
-            <input type="text" name="nombre" required placeholder="Ej: Firulais" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-teal-500 outline-none">
-        </div>
-
-        <div class="grid grid-cols-2 gap-4">
+        <form action="/mascotas/crear" method="POST" class="space-y-4 text-left">
             <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-1">Especie</label>
-                <select name="especie" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-teal-500 outline-none">
-                    <option value="Perro">Perro</option>
-                    <option value="Gato">Gato</option>
-                    <option value="Exótico">Exótico</option>
-                </select>
+                <label class="block text-sm font-bold text-slate-700 mb-1">Nombre</label>
+                <input type="text" name="nombre" required maxlength="100"
+                       class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition"
+                       placeholder="Ej: Firulais">
             </div>
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-1">Raza</label>
-                <input type="text" name="raza" placeholder="Ej: Mestizo" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-teal-500 outline-none">
-            </div>
-        </div>
 
-        <!-- EDAD Y SEXO -->
-        <div class="grid grid-cols-2 gap-4">
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-1">Edad (años)</label>
-                <input type="number" name="edad" required min="0" step="1" placeholder="Ej: 3" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-teal-500 outline-none">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">Especie</label>
+                    <input type="text" name="especie" required maxlength="50"
+                           class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition"
+                           placeholder="Ej: Perro">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">Raza</label>
+                    <input type="text" name="raza" required maxlength="100"
+                           class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition"
+                           placeholder="Ej: Bulldog">
+                </div>
             </div>
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-1">Sexo</label>
-                <select name="sexo" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-teal-500 outline-none bg-white">
-                    <option value="" disabled selected>Selecciona...</option>
-                    <option value="Macho">Macho</option>
-                    <option value="Hembra">Hembra</option>
-                </select>
-            </div>
-        </div>
 
-        <!-- PESO Y ESTERILIZADO -->
-        <div class="grid grid-cols-2 gap-4 items-center">
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-1">Peso (kg)</label>
-                <input type="number" step="0.01" name="peso_kg" placeholder="0.00" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-teal-500 outline-none">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">Edad (años)</label>
+                    <input type="number" name="edad" required min="0" step="1"
+                           class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition"
+                           placeholder="Ej: 3">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-1">Sexo</label>
+                    <select name="sexo" required
+                            class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition bg-white">
+                        <option value="" disabled selected>Selecciona...</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Hembra">Hembra</option>
+                    </select>
+                </div>
             </div>
-            <div class="flex items-center gap-2 pt-6">
-                <input type="checkbox" id="esterilizado" name="esterilizado" class="w-4 h-4 text-teal-600 rounded">
-                <label for="esterilizado" class="text-sm text-slate-700 font-medium">¿Esterilizado?</label>
-            </div>
-        </div>
 
-        <div class="flex justify-end gap-3 pt-4 border-t border-slate-100">
-            <a href="/mascotas" class="px-4 py-2 border border-slate-300 rounded-lg text-sm font-medium text-slate-600 hover:bg-slate-50">Cancelar</a>
-            <button type="submit" class="px-4 py-2 bg-teal-600 text-white rounded-lg text-sm font-semibold hover:bg-teal-700">Guardar Mascota</button>
-        </div>
-    </form>
+            <button type="submit"
+                    class="w-full bg-teal-600 text-white font-bold py-3 rounded-lg hover:bg-teal-700 transition shadow-lg shadow-teal-100">
+                Registrar mascota
+            </button>
+        </form>
+        <p class="text-sm text-slate-500 mt-6 text-center">
+            <a href="/mascotas" class="text-teal-600 font-bold hover:underline">&larr; Volver al listado</a>
+        </p>
+    </section>
 </main>
 
 <%- include('partials/footer') %>
+</body>
+</html>

@@ -17,3 +17,14 @@ export const registrarActividad = (mensaje) => {
         console.error("Error crítico en el sistema de logs:", error.message);
     }
 };
+
+export const registrarSeparadorInicio = () => {
+    try {
+        const timestamp = dayjs().format('YYYY-MM-DD HH:mm:ss');
+        const linea = '='.repeat(70);
+        const bloque = `\n${linea}\n🟢 NUEVO ARRANQUE DEL SERVIDOR — ${timestamp}\n${linea}\n`;
+        fs.appendFileSync(LOG_PATH, bloque, 'utf-8');
+    } catch (error) {
+        console.error("Error crítico en el sistema de logs (separador):", error.message);
+    }
+};
