@@ -1,0 +1,57 @@
+<!-- views/duenos_create.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body class="flex flex-col min-h-screen bg-slate-50">
+<%- include('partials/navbar') %>
+
+<main class="flex-grow flex items-center justify-center px-6 py-12">
+    <section class="max-w-lg w-full bg-white p-10 rounded-3xl shadow-xl border border-slate-50">
+
+        <div class="text-center mb-8">
+            <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl border-4 border-teal-100">
+                👤
+            </div>
+            <h1 class="text-3xl font-bold text-slate-800 mb-2">Registrar Dueño</h1>
+            <p class="text-slate-500 text-sm">
+                Completa los datos de contacto del nuevo dueño.
+            </p>
+        </div>
+
+        <form action="/duenos/crear" method="POST" class="space-y-5">
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-1">Nombre completo</label>
+                <input type="text" name="nombre" required
+                       class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition">
+            </div>
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-1">Email</label>
+                <input type="email" name="email" required
+                       class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition">
+            </div>
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-1">Teléfono</label>
+                <input type="tel" name="telefono" required
+                       class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition">
+            </div>
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-1">
+                    Dirección <span class="text-slate-400 font-normal">(opcional)</span>
+                </label>
+                <input type="text" name="direccion"
+                       class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 outline-none transition">
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-teal-600 text-white font-bold py-3 rounded-lg hover:bg-teal-700 transition shadow-lg shadow-teal-100">
+                Registrar Dueño
+            </button>
+        </form>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>
