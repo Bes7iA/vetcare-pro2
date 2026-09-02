@@ -38,12 +38,12 @@
             </div>
         <% } else { %>
             <!-- TABLA DE LISTADO: recorre listaMascotas, ordenada por id DESC desde el controlador -->
-            <!-- TABLA DE LISTADO: recorre listaMascotas, ordenada por id DESC desde el controlador -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-x-auto">
                 <table class="w-full text-left">
                     <thead>
                     <tr class="border-b border-slate-100 text-xs uppercase tracking-widest text-slate-400">
                         <th class="px-6 py-4 font-bold">Nombre</th>
+                        <th class="px-6 py-4 font-bold">Dueño</th>
                         <th class="px-6 py-4 font-bold">Especie</th>
                         <th class="px-6 py-4 font-bold">Raza</th>
                         <th class="px-6 py-4 font-bold">Edad</th>
@@ -56,6 +56,7 @@
                     <% listaMascotas.forEach(mascota => { %>
                         <tr class="border-b border-slate-50 last:border-0 hover:bg-teal-50/50 transition">
                             <td class="px-6 py-4 font-semibold text-slate-800"><%= mascota.nombre %></td>
+                            <td class="px-6 py-4 text-slate-600"><%= mascota.duenoNombre %></td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.especie %></td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.raza || '—' %></td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.edad %> años</td>
