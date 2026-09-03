@@ -139,7 +139,7 @@ router.post('/crear', async (req, res) => {
             duenoId: duenoIdNumerico
         });
 
-        registrarActividad(`🌐 POST /mascotas/crear - Éxito, mascota ${nombre} registrada exitosamente en la BD.`);
+        registrarActividad(`✔️🌐 POST /mascotas/crear - Éxito, mascota ${nombre} registrada exitosamente en la BD.`);
         res.redirect('/mascotas');
 
     } catch (error) {
@@ -273,7 +273,7 @@ router.post('/:id/editar', async (req, res) => {
             duenoId: duenoIdNumerico
         });
 
-        registrarActividad(`🌐 POST /mascotas/id/editar - ÉXITO: Mascota ${nombre} editada exitosamente en la BD.`);
+        registrarActividad(`✔️🌐 POST /mascotas/id/editar - ÉXITO: Mascota ${nombre} editada exitosamente en la BD.`);
         res.redirect(`/mascotas`);
 
     } catch (error) {
@@ -315,7 +315,7 @@ router.post('/:id/eliminar', async (req, res) => {
         // 2. Elimino la instancia ya localizada
         await mascota.destroy();
 
-        registrarActividad(`🌐 POST /mascotas/id/eliminar - ÉXITO: Mascota eliminada exitosamente en la BD.`);
+        registrarActividad(`✔️🌐 POST /mascotas/id/eliminar - ÉXITO: Mascota eliminada exitosamente en la BD.`);
         res.redirect(`/mascotas`);
 
     } catch (error) {

@@ -21,7 +21,7 @@ import {registrarActividad} from "./helpers/logger.js";
 
 // Si esta línea llega a ejecutarse, significa que TODOS los imports de arriba
 // (incluidos los 4 routers) se cargaron sin lanzar excepciones.
-registrarActividad("✅⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).");
+registrarActividad("✔️⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).");
 
 // La creación del objeto que levanta el servidor
 const app = express();
@@ -29,7 +29,7 @@ const app = express();
 // Activación del motor de plantillas, o vistas (EJS - Embebed JavaScript)
 app.set('views', path.join(import.meta.dirname, 'views'));
 app.set('view engine', 'ejs');
-registrarActividad("✅⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).");
+registrarActividad("✔️⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).");
 
 // Configuración de Middlewares globales propios de Express.js
 app.use(logger('dev'));
@@ -37,10 +37,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(import.meta.dirname, 'public')));
-registrarActividad("✅⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).");
+registrarActividad("✔️⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).");
 
 // --- INICIO: Configuración de sesión (express-session + connect-pg-simple) ---
-registrarActividad("✅⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).");
+registrarActividad("⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).");
 
 try {
     const PgSession = connectPgSimple(session);
@@ -66,7 +66,7 @@ try {
         }
     }));
 
-    registrarActividad("✅⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.");
+    registrarActividad("✔️⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.");
 } catch (error) {
     // Este catch atrapa errores de CONFIGURACIÓN síncrona (ej: parámetros inválidos).
     // Ojo: NO atrapa fallas de conexión a la BD, esas son asíncronas y ocurrirán
@@ -78,15 +78,16 @@ try {
 // Middleware "inyector": copia el usuario de la sesión a res.locals para TODAS las vistas
 app.use((req, res, next) => {
     res.locals.usuario = req.session.usuario || null;
+    res.locals.rutaActual = req.path;
     next();
 });
 // --- FIN: Configuración de sesión ---
 
 // --- INICIO: Configuración del ORM Sequelize ---
-registrarActividad("✅⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.");
+registrarActividad("⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.");
 try{
     await sequelize.authenticate();
-    registrarActividad("✅⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.");
+    registrarActividad("✔️⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.");
 }catch(error){
     registrarActividad(`❌ SISTEMA: ARRANQUE FALLIDO. No fue posible conectar a PostgreSQL para el ORM Sequelize: ${error.message}`);
 }
@@ -98,7 +99,7 @@ app.use('/users', usersRouter);
 app.use('/autenticacion', autenticacionRouter);
 app.use('/mascotas', mascotasRouter);
 app.use('/duenos', duenosRouter);
-registrarActividad("✅⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).");
+registrarActividad("✔️⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).");
 
 // Acá se configura el error más común en HTTP = 404 - No encontrado (not found)
 app.use((req, res, next) => {
@@ -119,7 +120,7 @@ app.use((err, req, res, next) => {
     res.render('error');
 });
 
-registrarActividad("✅⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.");
+registrarActividad("✔️⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.");
 
 // Exportación por defecto según el estándar ES6
 export default app;

@@ -42,24 +42,29 @@
                 <table class="w-full text-left">
                     <thead>
                     <tr class="border-b border-slate-100 text-xs uppercase tracking-widest text-slate-400">
-                        <th class="px-6 py-4 font-bold">Nombre</th>
-                        <th class="px-6 py-4 font-bold">Email</th>
-                        <th class="px-6 py-4 font-bold">Teléfono</th>
-                        <th class="px-6 py-4 font-bold">Dirección</th>
-                        <th class="px-6 py-4 font-bold">Fecha de Registro</th>
-                        <th class="px-6 py-4 font-bold text-right">Acciones</th>
+                        <th class="px-4 py-4 font-bold">Nombre</th>
+                        <th class="px-4 py-4 font-bold">Email</th>
+                        <th class="px-4 py-4 font-bold">Teléfono</th>
+                        <th class="px-4 py-4 font-bold">Dirección</th>
+                        <th class="px-4 py-4 font-bold">Fecha de Registro</th>
+                        <th class="px-4 py-4 font-bold text-center">Mascotas Asociadas</th>
+                        <th class="px-4 py-4 font-bold text-right">Acciones</th>
                     </tr>
                     </thead>
                     <tbody>
                     <% listaDuenos.forEach(dueno => { %>
-                        <tr class="border-b border-slate-50 last:border-0 hover:bg-teal-50/50 transition">
-                            <td class="px-6 py-4 font-semibold text-slate-800"><%= dueno.nombre %></td>
-                            <td class="px-6 py-4 text-slate-600"><%= dueno.email %></td>
-                            <td class="px-6 py-4 text-slate-600"><%= dueno.telefono %></td>
-                            <td class="px-6 py-4 text-slate-600"><%= dueno.direccion || '—' %></td>
-                            <td class="px-6 py-4 text-slate-600"><%= dueno.fechaRegistroFormateada %></td>
+                        <tr class="border-b border-slate-50 last:border-0 even:bg-teal-50 hover:bg-purple-100/50 transition">
+                            <td class="px-4 py-4 font-semibold text-slate-800"><%= dueno.nombre %></td>
+                            <td class="px-4 py-4 text-slate-600"><%= dueno.email %></td>
+                            <td class="px-4 py-4 text-slate-600"><%= dueno.telefono %></td>
+                            <td class="px-4 py-4 text-slate-600"><%= dueno.direccion || '—' %></td>
+                            <td class="px-4 py-4 text-slate-600"><%= dueno.fechaRegistroFormateada %></td>
+                            <td class="px-4 py-4 text-center">
+    <span class="inline-flex items-center justify-center min-w-[1.75rem] h-7 px-2 rounded-full bg-orange-200 text-green-600 font-bold text-sm">
+        <%= dueno.cantidadMascotas %>
+    </span>
+                            </td>
                             <td class="px-6 py-4 text-right whitespace-nowrap">
-                                <!-- Columna reservada: los íconos de editar/eliminar llegan en las Fases 8 y 9 -->
                                 <div class="flex items-center justify-end gap-3">
                                     <!-- Editar es un <a> -- navegar no cambia estado -->
                                     <a href="/duenos/<%= dueno.id %>/editar"

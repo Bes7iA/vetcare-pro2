@@ -9,7 +9,7 @@
 
 <main class="flex-grow">
     <section class="section-container text-center pb-0">
-        <h1 class="text-4xl font-bold mb-4 text-teal-600">Mis Mascotas</h1>
+        <h1 class="text-4xl font-bold mb-4 text-teal-600">Registro de Mascotas</h1>
         <p class="text-slate-600 text-lg">
             Bienvenido/a, <strong class="text-teal-700"><%= usuario.nombre %></strong>. Este es el listado de mascotas registradas en el sistema.
         </p>
@@ -54,11 +54,11 @@
                     </thead>
                     <tbody>
                     <% listaMascotas.forEach(mascota => { %>
-                        <tr class="border-b border-slate-50 last:border-0 hover:bg-teal-50/50 transition">
+                        <tr class="border-b border-slate-50 last:border-0 even:bg-teal-50 hover:bg-purple-100/50 transition">
                             <td class="px-6 py-4 font-semibold text-slate-800"><%= mascota.nombre %></td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.duenoNombre %></td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.especie %></td>
-                            <td class="px-6 py-4 text-slate-600"><%= mascota.raza || '—' %></td>
+                            <td class="px-4 py-4 text-slate-600"><%= mascota.raza || '—' %></td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.edad %> años</td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.sexo %></td>
                             <td class="px-6 py-4 text-slate-600"><%= mascota.fechaIngresoFormateada %></td>

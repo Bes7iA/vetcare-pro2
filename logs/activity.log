@@ -1,0 +1,473 @@
+[2026-09-02 21:58:09] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-02 21:58:09] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-02 21:58:11] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-02 21:58:11] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [2]
+[2026-09-02 21:58:20] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-02 21:58:20] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-02 21:58:24] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-02 21:58:24] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-02 21:58:26] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-02 21:58:26] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-02 21:58:30] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-02 21:58:30] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-09-02 21:59:38
+======================================================================
+[2026-09-02 21:59:38] ⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-09-02 21:59:39] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-09-02 21:59:39] ✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-09-02 21:59:39] 💾 BASE DE DATOS - ORM SEQUELIZE: Intentando establecer conexión con PostgreSQL... 
+[2026-09-02 21:59:39] ✔️⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-09-02 21:59:39] ✔️⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-09-02 21:59:39] ✔️⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-09-02 21:59:39] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-09-02 21:59:39] ✔️⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-09-02 21:59:39] ⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.
+[2026-09-02 21:59:39] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT 1+1 AS result [2]
+[2026-09-02 21:59:39] ✔️⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.
+[2026-09-02 21:59:39] ✔️⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-09-02 21:59:39] ✔️⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-09-02 21:59:39] ✔️⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-09-02 21:59:39] ✔️⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-09-02 21:59:41] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-02 21:59:41] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [5]
+[2026-09-02 21:59:42] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-02 21:59:42] ❌🌐 GET /duenos - No se pudieron listar los dueños desde la BD. ERROR CRÍTICO: missing FROM-clause entry for table "Mascotas"
+[2026-09-02 21:59:49] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-02 21:59:51] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-02 21:59:51] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-02 21:59:53] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-02 21:59:53] ❌🌐 GET /duenos - No se pudieron listar los dueños desde la BD. ERROR CRÍTICO: missing FROM-clause entry for table "Mascotas"
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-09-03 11:06:13
+======================================================================
+[2026-09-03 11:06:13] ⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-09-03 11:06:14] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-09-03 11:06:14] ✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-09-03 11:06:14] 💾 BASE DE DATOS - ORM SEQUELIZE: Intentando establecer conexión con PostgreSQL... 
+[2026-09-03 11:06:15] ✔️⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-09-03 11:06:15] ✔️⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-09-03 11:06:15] ✔️⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-09-03 11:06:15] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-09-03 11:06:15] ✔️⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-09-03 11:06:15] ⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.
+[2026-09-03 11:06:15] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT 1+1 AS result [3]
+[2026-09-03 11:06:15] ✔️⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.
+[2026-09-03 11:06:15] ✔️⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-09-03 11:06:15] ✔️⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-09-03 11:06:15] ✔️⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-09-03 11:06:15] ✔️⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-09-03 11:08:21] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:08:23] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-09-03 11:08:28] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-09-03 11:08:28] ✔️🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para admin@gmail.com.
+[2026-09-03 11:08:28] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:08:30] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:08:30] ❌🌐 GET /duenos - No se pudieron listar los dueños desde la BD. ERROR CRÍTICO: missing FROM-clause entry for table "Mascotas"
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-09-03 11:12:15
+======================================================================
+[2026-09-03 11:12:15] ⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-09-03 11:12:15] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-09-03 11:12:15] ✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-09-03 11:12:16] 💾 BASE DE DATOS - ORM SEQUELIZE: Intentando establecer conexión con PostgreSQL... 
+[2026-09-03 11:12:16] ✔️⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-09-03 11:12:16] ✔️⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-09-03 11:12:16] ✔️⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-09-03 11:12:16] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-09-03 11:12:16] ✔️⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-09-03 11:12:16] ⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.
+[2026-09-03 11:12:16] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT 1+1 AS result [1]
+[2026-09-03 11:12:16] ✔️⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.
+[2026-09-03 11:12:16] ✔️⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-09-03 11:12:16] ✔️⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-09-03 11:12:16] ✔️⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-09-03 11:12:16] ✔️⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-09-03 11:12:18] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-09-03 11:12:19] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:12:19] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [6]
+[2026-09-03 11:12:19] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [5]
+[2026-09-03 11:12:53] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:12:53] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:12:53] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:12:53] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:12:53] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:13:33] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:13:33] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [2]
+[2026-09-03 11:13:33] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [3]
+[2026-09-03 11:13:37] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:13:37] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:13:38] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:13:38] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:13:38] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-09-03 11:13:55
+======================================================================
+[2026-09-03 11:13:55] ⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-09-03 11:13:56] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-09-03 11:13:56] ✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-09-03 11:13:56] 💾 BASE DE DATOS - ORM SEQUELIZE: Intentando establecer conexión con PostgreSQL... 
+[2026-09-03 11:13:56] ✔️⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-09-03 11:13:56] ✔️⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-09-03 11:13:56] ✔️⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-09-03 11:13:56] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-09-03 11:13:56] ✔️⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-09-03 11:13:56] ⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.
+[2026-09-03 11:13:56] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT 1+1 AS result [1]
+[2026-09-03 11:13:56] ✔️⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.
+[2026-09-03 11:13:56] ✔️⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-09-03 11:13:56] ✔️⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-09-03 11:13:56] ✔️⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-09-03 11:13:56] ✔️⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-09-03 11:13:58] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:13:58] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [4]
+[2026-09-03 11:13:58] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:14:11] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:14:11] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:14:11] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:14:24] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:14:24] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:14:24] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:14:46] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:14:46] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:14:46] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [3]
+[2026-09-03 11:14:49] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:14:49] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:14:52] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:14:52] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [0]
+[2026-09-03 11:14:52] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:15:06] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:15:06] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [5]
+[2026-09-03 11:15:09] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:15:09] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:15:09] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:15:30] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:15:30] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:15:30] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:15:41] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:15:41] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [2]
+[2026-09-03 11:15:41] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:15:50] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:15:50] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:15:50] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:15:59] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:15:59] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:15:59] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:16:13] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:16:13] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:16:13] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:16:29] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:16:29] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:16:29] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:17:35] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:17:35] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:17:35] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:17:44] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:17:44] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:17:44] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:17:53] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:17:53] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:17:53] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:18:03] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:18:03] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:18:03] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:18:07] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:18:07] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:18:07] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:18:29] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:18:29] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:18:29] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:18:35] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:18:35] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:18:35] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [0]
+[2026-09-03 11:19:06] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:19:06] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:19:42] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:19:42] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:20:23] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "edad", "nombre", "especie", "raza", "sexo", "fecha_ingreso" AS "fechaIngreso", "dueno_id" AS "duenoId" FROM "mascotas" AS "Mascota" WHERE "Mascota"."id" = 10; [3]
+[2026-09-03 11:20:23] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."nombre" ASC; [6]
+[2026-09-03 11:20:23] 🌐 GET /mascotas/id/editar - Formulario de edición de mascotas solicitado y en proceso de renderizado.
+[2026-09-03 11:20:28] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "edad", "nombre", "especie", "raza", "sexo", "fecha_ingreso" AS "fechaIngreso", "dueno_id" AS "duenoId" FROM "mascotas" AS "Mascota" WHERE "Mascota"."id" = 10; [1]
+[2026-09-03 11:20:28] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 3; [1]
+[2026-09-03 11:20:28] 💾 ORM SEQUELIZE - SQL: Executed (default): UPDATE "mascotas" SET "raza"=$1 WHERE "id" = $2 [5]
+[2026-09-03 11:20:28] ✔️🌐 POST /mascotas/id/editar - ÉXITO: Mascota Linda editada exitosamente en la BD.
+[2026-09-03 11:20:28] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:20:28] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:21:46] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:21:48] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-09-03 11:21:49] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-09-03 11:21:57] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:21:57] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:22:08] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:22:08] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:22:08] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:22:20] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:22:20] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:22:32] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "edad", "nombre", "especie", "raza", "sexo", "fecha_ingreso" AS "fechaIngreso", "dueno_id" AS "duenoId" FROM "mascotas" AS "Mascota" WHERE "Mascota"."id" = 8; [2]
+[2026-09-03 11:22:32] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."nombre" ASC; [3]
+[2026-09-03 11:22:32] 🌐 GET /mascotas/id/editar - Formulario de edición de mascotas solicitado y en proceso de renderizado.
+[2026-09-03 11:22:36] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "edad", "nombre", "especie", "raza", "sexo", "fecha_ingreso" AS "fechaIngreso", "dueno_id" AS "duenoId" FROM "mascotas" AS "Mascota" WHERE "Mascota"."id" = 8; [2]
+[2026-09-03 11:22:36] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 1; [1]
+[2026-09-03 11:22:36] 💾 ORM SEQUELIZE - SQL: Executed (default): UPDATE "mascotas" SET "raza"=$1 WHERE "id" = $2 [4]
+[2026-09-03 11:22:36] ✔️🌐 POST /mascotas/id/editar - ÉXITO: Mascota Pelotita editada exitosamente en la BD.
+[2026-09-03 11:22:36] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:22:36] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:22:37] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "edad", "nombre", "especie", "raza", "sexo", "fecha_ingreso" AS "fechaIngreso", "dueno_id" AS "duenoId" FROM "mascotas" AS "Mascota" WHERE "Mascota"."id" = 10; [0]
+[2026-09-03 11:22:37] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."nombre" ASC; [1]
+[2026-09-03 11:22:37] 🌐 GET /mascotas/id/editar - Formulario de edición de mascotas solicitado y en proceso de renderizado.
+[2026-09-03 11:22:42] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "edad", "nombre", "especie", "raza", "sexo", "fecha_ingreso" AS "fechaIngreso", "dueno_id" AS "duenoId" FROM "mascotas" AS "Mascota" WHERE "Mascota"."id" = 10; [1]
+[2026-09-03 11:22:42] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 3; [1]
+[2026-09-03 11:22:42] 💾 ORM SEQUELIZE - SQL: Executed (default): UPDATE "mascotas" SET "raza"=$1 WHERE "id" = $2 [3]
+[2026-09-03 11:22:42] ✔️🌐 POST /mascotas/id/editar - ÉXITO: Mascota Linda editada exitosamente en la BD.
+[2026-09-03 11:22:42] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:22:42] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:22:49] 🌐 GET /mascotas/crear - Acceso autorizado a crear una mascota para admin@gmail.com.
+[2026-09-03 11:22:49] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."nombre" ASC; [1]
+[2026-09-03 11:23:20] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 2; [2]
+[2026-09-03 11:23:20] 💾 ORM SEQUELIZE - SQL: Executed (default): INSERT INTO "mascotas" ("id","edad","nombre","especie","raza","sexo","fecha_ingreso","dueno_id") VALUES (DEFAULT,$1,$2,$3,$4,$5,CURRENT_DATE,$6) RETURNING "id","edad","nombre","especie","raza","sexo","fecha_ingreso","dueno_id"; [8]
+[2026-09-03 11:23:20] ✔️🌐 POST /mascotas/crear - Éxito, mascota Chocolito registrada exitosamente en la BD.
+[2026-09-03 11:23:20] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:23:20] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [3]
+[2026-09-03 11:23:21] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:23:21] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:23:21] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:23:23] 🌐 GET /duenos/id/editar - Acceso autorizado a editar un dueño para admin@gmail.com.
+[2026-09-03 11:23:23] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 2; [1]
+[2026-09-03 11:23:23] 🌐 GET /duenos/id/editar - Formulario de edición de dueños solicitado correctamente y en proceso de renderización.
+[2026-09-03 11:23:26] 🌐 POST /duenos/id/editar - Acceso autorizado a editar un dueño para admin@gmail.com.
+[2026-09-03 11:23:26] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 2; [1]
+[2026-09-03 11:23:26] 💾 ORM SEQUELIZE - SQL: Executed (default): UPDATE "duenos" SET "nombre"=$1 WHERE "id" = $2 [2]
+[2026-09-03 11:23:26] ✔️🌐 POST /duenos/id/editar - ÉXITO: Dueño Roxana editado exitosamente en la BD.
+[2026-09-03 11:23:26] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:23:26] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:23:26] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:23:28] 🌐 GET /duenos/id/editar - Acceso autorizado a editar un dueño para admin@gmail.com.
+[2026-09-03 11:23:28] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 3; [1]
+[2026-09-03 11:23:28] 🌐 GET /duenos/id/editar - Formulario de edición de dueños solicitado correctamente y en proceso de renderización.
+[2026-09-03 11:23:33] 🌐 POST /duenos/id/editar - Acceso autorizado a editar un dueño para admin@gmail.com.
+[2026-09-03 11:23:33] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 3; [1]
+[2026-09-03 11:23:33] 💾 ORM SEQUELIZE - SQL: Executed (default): UPDATE "duenos" SET "nombre"=$1 WHERE "id" = $2 [2]
+[2026-09-03 11:23:33] ✔️🌐 POST /duenos/id/editar - ÉXITO: Dueño Nicolas editado exitosamente en la BD.
+[2026-09-03 11:23:33] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:23:33] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:23:33] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [0]
+[2026-09-03 11:23:34] 🌐 GET /duenos/crear - Acceso autorizado a crear un dueño para admin@gmail.com.
+[2026-09-03 11:23:53] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:23:53] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:24:05] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:24:05] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:24:05] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:24:08] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:24:08] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:24:10] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:24:10] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:24:10] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:24:13] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:24:13] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:24:58] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:24:58] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [5]
+[2026-09-03 11:25:10] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:25:10] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:25:34] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:25:34] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [4]
+[2026-09-03 11:25:34] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:25:39] 🌐 GET /duenos/crear - Acceso autorizado a crear un dueño para admin@gmail.com.
+[2026-09-03 11:26:06] 🌐 POST /duenos/crear - Acceso autorizado a crear un dueño para admin@gmail.com.
+[2026-09-03 11:26:06] 💾 ORM SEQUELIZE - SQL: Executed (default): INSERT INTO "duenos" ("id","nombre","email","telefono","direccion","fecha_registro") VALUES (DEFAULT,$1,$2,$3,$4,CURRENT_DATE) RETURNING "id","nombre","email","telefono","direccion","fecha_registro"; [8]
+[2026-09-03 11:26:06] ✔️🌐 POST /duenos/crear - ÉXITO: Dueño Natalia registrado exitosamente en la BD.
+[2026-09-03 11:26:06] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:26:06] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [2]
+[2026-09-03 11:26:06] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:26:14] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:26:14] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:26:15] 🌐 GET /mascotas/crear - Acceso autorizado a crear una mascota para admin@gmail.com.
+[2026-09-03 11:26:15] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."nombre" ASC; [2]
+[2026-09-03 11:27:01] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 5; [3]
+[2026-09-03 11:27:01] 💾 ORM SEQUELIZE - SQL: Executed (default): INSERT INTO "mascotas" ("id","edad","nombre","especie","raza","sexo","fecha_ingreso","dueno_id") VALUES (DEFAULT,$1,$2,$3,$4,$5,CURRENT_DATE,$6) RETURNING "id","edad","nombre","especie","raza","sexo","fecha_ingreso","dueno_id"; [4]
+[2026-09-03 11:27:01] ✔️🌐 POST /mascotas/crear - Éxito, mascota Saltarin registrada exitosamente en la BD.
+[2026-09-03 11:27:01] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:27:01] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:27:11] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:27:11] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:27:11] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:27:12] 🌐 GET /duenos/crear - Acceso autorizado a crear un dueño para admin@gmail.com.
+[2026-09-03 11:27:15] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:27:15] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:27:16] 🌐 GET /mascotas/crear - Acceso autorizado a crear una mascota para admin@gmail.com.
+[2026-09-03 11:27:16] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."nombre" ASC; [3]
+[2026-09-03 11:27:19] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:27:19] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:27:19] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:27:24] ✔️🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para admin@gmail.com.
+[2026-09-03 11:27:24] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:27:28] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-09-03 11:27:52] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-09-03 11:27:52] ✔️🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para admin@gmail.com.
+[2026-09-03 11:27:52] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:27:53] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:27:53] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:28:33] ✔️🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para admin@gmail.com.
+[2026-09-03 11:28:33] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:29:20] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:29:30] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:29:36] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:30:24] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-09-03 11:30:28] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-09-03 11:30:29] ✔️🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para admin@gmail.com.
+[2026-09-03 11:30:29] 🌐 GET / - El usuario visitó la página de Inicio.
+
+======================================================================
+🟢 NUEVO ARRANQUE DEL SERVIDOR — 2026-09-03 11:30:42
+======================================================================
+[2026-09-03 11:30:42] ⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).
+[2026-09-03 11:30:42] 🛡️ SERVIDOR: Cargando variables de entorno desde el archivo .env.
+[2026-09-03 11:30:42] ✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.
+[2026-09-03 11:30:42] 💾 BASE DE DATOS - ORM SEQUELIZE: Intentando establecer conexión con PostgreSQL... 
+[2026-09-03 11:30:43] ✔️⚙️ SISTEMA: Imports resueltos correctamente. Iniciando construcción de la aplicación Express (app.js).
+[2026-09-03 11:30:43] ✔️⚙️ SISTEMA: Motor de vistas EJS configurado correctamente (carpeta: /views).
+[2026-09-03 11:30:43] ✔️⚙️ SISTEMA: Middlewares globales configurados (morgan, json, urlencoded, cookie-parser, estáticos).
+[2026-09-03 11:30:43] ⚙️ SISTEMA: Inicializando el middleware de sesión (express-session + PostgreSQL).
+[2026-09-03 11:30:43] ✔️⚙️ SISTEMA: Middleware de sesión configurado exitosamente sobre PostgreSQL.
+[2026-09-03 11:30:43] ⚙️ SISTEMA: Verificando la conexión a PostgreSQL para el ORM Sequelize.
+[2026-09-03 11:30:43] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT 1+1 AS result [1]
+[2026-09-03 11:30:43] ✔️⚙️ SISTEMA: Conexión establecida con éxito para ORM Sequelize y PostgreSQL.
+[2026-09-03 11:30:43] ✔️⚙️ SISTEMA: Rutas principales registradas (/, /users, /autenticacion, /mascotas).
+[2026-09-03 11:30:43] ✔️⚙️ SISTEMA: Aplicación Express configurada por completo y lista para ser exportada.
+[2026-09-03 11:30:43] ✔️⚙️ SERVIDOR: app.js importado y construido sin errores.
+[2026-09-03 11:30:43] ✔️⚙️ SERVIDOR: Arranque exitoso. Escuchando en port 3000.
+[2026-09-03 11:30:44] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:30:48] ✔️🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para admin@gmail.com.
+[2026-09-03 11:30:48] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:30:49] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-09-03 11:30:57] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-09-03 11:30:57] ✔️🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para admin@gmail.com.
+[2026-09-03 11:30:57] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:31:12] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:31:21] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:31:35] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:31:45] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:31:50] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:31:50] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:31:50] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:31:52] ✔️🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para admin@gmail.com.
+[2026-09-03 11:31:52] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:31:53] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-09-03 11:31:55] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-09-03 11:32:08] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-09-03 11:32:10] 🌐 GET /autenticacion/login - El usuario visitó la página de Login.
+[2026-09-03 11:32:15] 💾 BASE DE DATOS: Generando una nueva conexión (Client) de PostgreSQL.
+[2026-09-03 11:32:15] ✔️🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para admin@gmail.com.
+[2026-09-03 11:32:15] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:32:17] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:32:17] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:32:39] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:32:39] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:32:46] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:32:46] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:32:49] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:32:49] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:33:13] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:33:13] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:34:33] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:34:33] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:35:19] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:35:19] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:35:24] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:35:24] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:35:54] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:35:54] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:36:17] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:36:17] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:36:29] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:36:29] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:36:35] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:36:36] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:36:41] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:36:41] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:36:47] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:36:47] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:37:03] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:03] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:37:04] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:04] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:37:12] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:12] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:37:21] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:21] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:37:25] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:25] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:37:32] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:32] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:37:38] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:38] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:37:46] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:46] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:37:51] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:37:51] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:38:45] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:38:45] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:39:09] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:39:09] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:39:17] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:39:17] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:39:22] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:39:22] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:39:22] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:39:40] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:39:40] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [5]
+[2026-09-03 11:43:34] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:43:35] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:43:39] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:43:39] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [1]
+[2026-09-03 11:43:39] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:43:40] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:43:40] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [2]
+[2026-09-03 11:43:54] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:43:54] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:45:03] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:45:03] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:45:10] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:45:10] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:45:20] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:45:20] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:46:44] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:46:44] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:46:51] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:46:51] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:47:03] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:47:03] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [5]
+[2026-09-03 11:47:04] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:47:04] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:47:44] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:47:44] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:48:01] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:48:01] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [3]
+[2026-09-03 11:49:01] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:49:01] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:49:12] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:49:12] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:50:34] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:50:34] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [4]
+[2026-09-03 11:51:14] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:51:14] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [3]
+[2026-09-03 11:51:14] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [2]
+[2026-09-03 11:51:18] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:51:18] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [3]
+[2026-09-03 11:51:19] 🌐 GET /contacto - El usuario visitó la página de Contacto.
+[2026-09-03 11:51:20] 🌐 GET /servicios - El usuario visitó la página de Servicios.
+[2026-09-03 11:51:21] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:51:22] 🌐 GET / - Acceso autorizado a lista de dueños para admin@gmail.com.
+[2026-09-03 11:51:22] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" ORDER BY "Dueno"."id" ASC; [0]
+[2026-09-03 11:51:22] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "dueno_id" AS "duenoId", COUNT("id") AS "total" FROM "mascotas" AS "Mascota" GROUP BY "duenoId"; [1]
+[2026-09-03 11:51:27] 🌐 POST /duenos/id/eliminar - Acceso autorizado a eliminar un dueño para admin@gmail.com.
+[2026-09-03 11:51:27] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "id", "nombre", "email", "telefono", "direccion", "fecha_registro" AS "fechaRegistro" FROM "duenos" AS "Dueno" WHERE "Dueno"."id" = 2; [1]
+[2026-09-03 11:51:27] ❌🌐 POST /duenos/id/eliminar - RECHAZADO: Intento de eliminar un dueño con mascotas asociadas.
+[2026-09-03 11:51:35] 🌐 GET / - El usuario visitó la página de Inicio.
+[2026-09-03 11:51:36] 🌐 GET / - Acceso autorizado a lista de mascotas para admin@gmail.com.
+[2026-09-03 11:51:36] 💾 ORM SEQUELIZE - SQL: Executed (default): SELECT "Mascota"."id", "Mascota"."edad", "Mascota"."nombre", "Mascota"."especie", "Mascota"."raza", "Mascota"."sexo", "Mascota"."fecha_ingreso" AS "fechaIngreso", "Mascota"."dueno_id" AS "duenoId", "Dueno"."id" AS "Dueno.id", "Dueno"."nombre" AS "Dueno.nombre", "Dueno"."email" AS "Dueno.email", "Dueno"."telefono" AS "Dueno.telefono", "Dueno"."direccion" AS "Dueno.direccion", "Dueno"."fecha_registro" AS "Dueno.fechaRegistro" FROM "mascotas" AS "Mascota" LEFT OUTER JOIN "duenos" AS "Dueno" ON "Mascota"."dueno_id" = "Dueno"."id" ORDER BY "Mascota"."id" ASC; [1]
+[2026-09-03 11:52:02] ✔️🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para admin@gmail.com.
+[2026-09-03 11:52:02] 🌐 GET / - El usuario visitó la página de Inicio.

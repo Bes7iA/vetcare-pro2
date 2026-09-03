@@ -82,7 +82,7 @@ router.post('/enviar-consulta', async (req, res) => {
         // 1.1 Abrir la conexión a la base de datos (PASO CRÍTICO)
         registrarActividad(`💾 BASE DE DATOS: Intentando conectar a PostgreSQL en ${config.db.host}:${config.db.port}.`);
         await conexion.connect();
-        registrarActividad(`💾 BASE DE DATOS: Conexión a PostgreSQL establecida con éxito.`);
+        registrarActividad(`✔️💾 BASE DE DATOS: Conexión a PostgreSQL establecida con éxito.`);
 
         registrarActividad(`🌐 POST /enviar-consulta - PROCESANDO: Iniciando envío de correo para ${email}...`);
 
@@ -115,7 +115,7 @@ router.post('/enviar-consulta', async (req, res) => {
 
         // 4. Envío del correo electrónico configurado de forma asincrónica | Dependendia 'nodemailer'
         await transporter.sendMail(mailOptions);
-        registrarActividad(`🌐 POST /enviar-consulta - ÉXITO: Correo enviado correctamente desde ${email}.`);
+        registrarActividad(`✔️🌐 POST /enviar-consulta - ÉXITO: Correo enviado correctamente desde ${email}.`);
 
         // 4.1 Inserción de datos en la BD - PostgreSQL a través de una Consulta SQL Parametrizada
         registrarActividad(`💾 BASE DE DATOS: Ejecutando un INSERT en la base de datos PostgreSQL.`);
@@ -139,8 +139,11 @@ router.post('/enviar-consulta', async (req, res) => {
     } catch (error) {
         registrarActividad(`❌🌐 POST /enviar-consulta - ERROR CRÍTICO: ${error.message}`);
         res.status(500).render('error', {
-            message: "No pudimos enviar tu mensaje en este momento.",
-            error: { status: 500, stack: "Error de conexión SMTP: " + error.message },
+            message: "No pudimos enviar tu mensaje en este momento. Por favor, intenta más tarde o contáctanos directamente por teléfono.",
+            error: {
+                status: 500,
+                stack: req.app.get('env') === 'development' ? error.stack : {}
+            },
             nombreClinica: 'VetCare Pro'
         });
     } finally {

@@ -24,7 +24,7 @@ REQUIRED_ENV_VARS.forEach((envVar) => {
     }
 });
 
-registrarActividad("🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.");
+registrarActividad("✔️🛡️ SERVIDOR: Todas las variables de entorno fueron validadas con éxito.");
 
 export const config = {
     db: {

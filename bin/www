@@ -11,7 +11,7 @@ import { registrarActividad, registrarSeparadorInicio } from "../helpers/logger.
 const debug = debugLib("vet-express:server");
 
 registrarSeparadorInicio();
-registrarActividad("✅⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).");
+registrarActividad("⚙️ SERVIDOR: Iniciando el proceso de arranque (bin/www).");
 
 /**
  * Red de seguridad GLOBAL: captura cualquier excepción o promesa rechazada
@@ -37,7 +37,7 @@ async function iniciarServidor() {
   try {
     const modulo = await import("../app.js");
     app = modulo.default;
-    registrarActividad("✅⚙️ SERVIDOR: app.js importado y construido sin errores.");
+    registrarActividad("✔️⚙️ SERVIDOR: app.js importado y construido sin errores.");
   } catch (error) {
     registrarActividad(`❌ SERVIDOR: ARRANQUE FALLIDO. No se pudo construir la aplicación Express. Motivo: ${error.message}`);
     console.error("No se pudo iniciar el servidor. Revisa 'logs/activity.log' para más detalles.");
@@ -91,7 +91,7 @@ function onError(error, port) {
 function onListening(server) {
   const addr = server.address();
   const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
-  registrarActividad(`✅⚙️ SERVIDOR: Arranque exitoso. Escuchando en ${bind}.`);
+  registrarActividad(`✔️⚙️ SERVIDOR: Arranque exitoso. Escuchando en ${bind}.`);
   console.log(`SERVIDOR HTTP - Aplicación desplegada en: http://localhost:${addr.port}`);
   debug('Listening on ' + bind);
 }

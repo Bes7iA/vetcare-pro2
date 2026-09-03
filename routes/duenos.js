@@ -6,6 +6,7 @@ import "dayjs/locale/es.js";
 import { estaAutenticado } from "../middlewares/auth.js";
 import { registrarActividad } from "../helpers/logger.js";
 import Dueno from "../models/dueno.js";
+import Mascota from "../models/mascota.js";
 
 dayjs.locale("es");
 
@@ -22,11 +23,26 @@ router.get('/', async (req, res) => {
     try {
         registrarActividad(`🌐 GET / - Acceso autorizado a lista de dueños para ${req.session.usuario.email}.`);
 
-        // 1. Uso el ORM Sequelize (metodo findAll()) para hacer el SELECT a PostgreSQL
+        // 1. Traigo todos los dueños, tal como antes
         const duenos = await Dueno.findAll({order: [["id", "ASC"]]});
 
-        // 2. Lo que devuelve el ORM Sequelize (findAll()) es un arreglo de objetos (clase Dueno), no me sirve,
-        // ya que debo transformarlo a un arreglo de diccionarios (JSON) para enviar a la VISTA EJS
+        // 2. Consulta aparte: cuento mascotas agrupadas por dueño (sin JOIN, sin alias ambiguos)
+        const conteos = await Mascota.findAll({
+            attributes: [
+                'duenoId',
+                [Dueno.sequelize.fn('COUNT', Dueno.sequelize.col('id')), 'total']
+            ],
+            group: ['duenoId']
+        });
+
+        // 3. Armo un diccionario simple: { duenoId: cantidad }
+        const mapaConteos = {};
+        conteos.forEach((fila) => {
+            const f = fila.toJSON();
+            mapaConteos[f.duenoId] = Number(f.total);
+        });
+
+        // 4. Uno ambos resultados
         const listaDuenos = duenos.map((dueno) => {
             const d = dueno.toJSON();
             return {
@@ -35,11 +51,11 @@ router.get('/', async (req, res) => {
                 email: d.email,
                 telefono: d.telefono,
                 direccion: d.direccion,
+                cantidadMascotas: mapaConteos[d.id] || 0,
                 fechaRegistroFormateada: dayjs(d.fechaRegistro).format('DD/MM/YYYY')
             };
         });
 
-        // 3. Envío los datos y renderizo la vista EJS
         res.render('duenos', {
             titulo: 'Dueños | VetCare Pro',
             nombreClinica: 'VetCare Pro',
@@ -86,7 +102,7 @@ router.post('/crear', async (req, res) => {
             direccion: direccion ? validator.escape(direccion) : null
         });
 
-        registrarActividad(`🌐 POST /duenos/crear - ÉXITO: Dueño ${nuevoDueno.nombre} registrado exitosamente en la BD.`);
+        registrarActividad(`✔️🌐 POST /duenos/crear - ÉXITO: Dueño ${nuevoDueno.nombre} registrado exitosamente en la BD.`);
         res.redirect('/duenos');
 
     } catch (error) {
@@ -185,7 +201,7 @@ router.post('/:id/editar', async (req, res) => {
             direccion: direccion ? validator.escape(direccion) : null
         });
 
-        registrarActividad(`🌐 POST /duenos/id/editar - ÉXITO: Dueño ${dueno.nombre} editado exitosamente en la BD.`);
+        registrarActividad(`✔️🌐 POST /duenos/id/editar - ÉXITO: Dueño ${dueno.nombre} editado exitosamente en la BD.`);
         res.redirect('/duenos');
 
     } catch (error) {
@@ -226,10 +242,21 @@ router.post('/:id/eliminar', async (req, res) => {
 
         await dueno.destroy();
 
-        registrarActividad(`🌐 POST /duenos/id/eliminar - ÉXITO: Dueño ${dueno.nombre} eliminado exitosamente en la BD.`);
+        registrarActividad(`✔️🌐 POST /duenos/id/eliminar - ÉXITO: Dueño ${dueno.nombre} eliminado exitosamente en la BD.`);
         res.redirect('/duenos');
 
     } catch (error) {
+        // Interceptamos específicamente el error de violación de Foreign Key
+        // (Sequelize lo identifica con este nombre cuando el ON DELETE RESTRICT bloquea el borrado)
+        if (error.name === 'SequelizeForeignKeyConstraintError') {
+            registrarActividad(`❌🌐 POST /duenos/id/eliminar - RECHAZADO: Intento de eliminar un dueño con mascotas asociadas.`);
+            return res.status(409).render('error', {
+                message: 'No puedes eliminar este dueño porque todavía tiene mascotas registradas a su nombre. Reasigna o elimina esas mascotas primero.',
+                error: {status: 409, stack: 'Esta es una restricción de integridad de datos, no un error del sistema.'},
+                nombreClinica: 'VetCare Pro'
+            });
+        }
+
         registrarActividad(`❌🌐 POST /duenos/id/eliminar - No se pudo eliminar un dueño en la BD. ERROR CRÍTICO: ${error.message}`);
         res.status(500).render('error', {
             message: 'No pudimos eliminar el dueño en este momento.',

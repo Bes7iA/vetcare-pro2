@@ -71,7 +71,7 @@ router.post('/registro', esInvitado, async (req, res) => {
         const valores = [validator.escape(nombre), email, passwordHash];
         await conexion.query(insertSql, valores);
 
-        registrarActividad(`🔐 POST /autenticacion/registro - ÉXITO: Usuario registrado correctamente (${email}).`);
+        registrarActividad(`✔️🔐 POST /autenticacion/registro - ÉXITO: Usuario registrado correctamente (${email}).`);
 
         // 4. Redirigimos al login -- el usuario debe autenticarse con sus nuevas credenciales
         res.redirect('/autenticacion/login');
@@ -152,7 +152,7 @@ router.post('/login', esInvitado, async (req, res) => {
             email: usuario.email
         };
 
-        registrarActividad(`🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ${email}.`);
+        registrarActividad(`✔️🔐 POST /autenticacion/login - ÉXITO: Sesión iniciada para ${email}.`);
         res.redirect('/');
 
     } catch (error) {
@@ -180,7 +180,7 @@ router.post('/logout', estaAutenticado, (req, res) => {
             return res.redirect('/');
         }
         res.clearCookie('connect.sid');
-        registrarActividad(`🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ${emailUsuario}.`);
+        registrarActividad(`✔️🔐 POST /autenticacion/logout - ÉXITO: Sesión cerrada para ${emailUsuario}.`);
         res.redirect('/');
     });
 });
